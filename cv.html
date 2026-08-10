@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Shihab Sulaiman – Curriculum Vitae</title>
+  <meta name="description" content="CV of Mohamed Shihab Sulaiman – Sales Consultant, Academic Director & HR Leader." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ============================================================
+       GLOBAL RESET & VARIABLES
+       ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:       #1d4ed8;   /* ONE blue for everything */
+      --blue-dark:  #1e3a8a;   /* slightly darker for header/sidebar */
+      --white:      #ffffff;
+      --text:       #111827;
+      --muted:      #4b5563;
+      --border:     #d1d5db;
+      --page-w:     210mm;
+      --page-h:     297mm;
+    }
+
+    html, body {
+      font-family: 'Inter', sans-serif;
+      font-size: 9.5pt;
+      background: #e5e7eb;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    /* ============================================================
+       PRINT BUTTON (screen only)
+       ============================================================ */
+    .print-bar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: var(--blue-dark);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 24px;
+      font-size: 13px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .print-bar span { opacity: 0.8; font-size: 12px; }
+    .print-btn {
+      background: var(--white);
+      color: var(--blue-dark);
+      border: none;
+      border-radius: 6px;
+      padding: 8px 22px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Inter', sans-serif;
+      transition: opacity 0.2s;
+    }
+    .print-btn:hover { opacity: 0.88; }
+
+    /* ============================================================
+       A4 PAGE WRAPPER
+       ============================================================ */
+    .page-wrap {
+      margin: 56px auto 40px;   /* 56px = print-bar height */
+      width: var(--page-w);
+      min-height: var(--page-h);
+      background: var(--white);
+      box-shadow: 0 4px 40px rgba(0,0,0,0.18);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ============================================================
+       HEADER STRIP (full width, blue)
+       ============================================================ */
+    .cv-header {
+      background: var(--blue);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 22px 28px;
+    }
+
+    .cv-header img {
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top;
+      border: 3px solid var(--white);
+      flex-shrink: 0;
+    }
+
+    .cv-header-text { flex: 1; }
+    .cv-label {
+      font-size: 7.5pt;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.8;
+      margin-bottom: 3px;
+    }
+    .cv-name {
+      font-size: 22pt;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.3px;
+    }
+    .cv-role {
+      font-size: 11pt;
+      font-weight: 300;
+      opacity: 0.9;
+      margin-top: 2px;
+    }
+    .cv-company {
+      font-size: 8pt;
+      opacity: 0.75;
+      margin-top: 4px;
+    }
+
+    /* chips row */
+    .cv-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .chip {
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 99px;
+      padding: 2px 10px;
+      font-size: 7.5pt;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* ============================================================
+       TWO-COLUMN BODY
+       ============================================================ */
+    .cv-body {
+      display: flex;
+      flex: 1;
+    }
+
+    /* --- SIDEBAR --- */
+    .sidebar {
+      width: 62mm;
+      background: var(--blue);
+      color: var(--white);
+      padding: 20px 16px;
+      flex-shrink: 0;
+    }
+
+    .sb-section { margin-bottom: 20px; }
+
+    .sb-title {
+      font-size: 7pt;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.65;
+      margin-bottom: 10px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid rgba(255,255,255,0.25);
+    }
+
+    .sb-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 9px;
+      font-size: 8pt;
+      line-height: 1.45;
+    }
+    .sb-item i {
+      width: 13px;
+      text-align: center;
+      margin-top: 2px;
+      flex-shrink: 0;
+      opacity: 0.85;
+    }
+    .sb-item a {
+      color: var(--white);
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .sb-skill {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 3px;
+      padding: 3px 8px;
+      font-size: 7.5pt;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .sb-skill i { opacity: 0.75; font-size: 7pt; flex-shrink: 0; }
+
+    .sb-lang {
+      margin-bottom: 8px;
+    }
+    .sb-lang-name {
+      font-size: 8pt;
+      font-weight: 600;
+    }
+    .sb-lang-level {
+      font-size: 7pt;
+      opacity: 0.7;
+    }
+    .lang-dots {
+      display: flex;
+      gap: 3px;
+      margin-top: 3px;
+    }
+    .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--white);
+    }
+    .dot.empty {
+      background: rgba(255,255,255,0.25);
+    }
+
+    /* --- MAIN --- */
+    .main {
+      flex: 1;
+      padding: 20px 22px;
+      overflow: hidden;
+    }
+
+    /* Section block */
+    .sec {
+      margin-bottom: 16px;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .sec-title {
+      font-size: 9pt;
+      font-weight: 700;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 8px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--blue);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .sec-title i { font-size: 9pt; }
+
+    /* Objective / Summary */
+    .para {
+      font-size: 8.5pt;
+      color: var(--muted);
+      line-height: 1.6;
+      border-left: 3px solid var(--blue);
+      padding-left: 10px;
+    }
+
+    /* Experience entry */
+    .exp-entry {
+      margin-bottom: 13px;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 1px;
+    }
+    .exp-role {
+      font-size: 9pt;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .exp-badge {
+      background: var(--blue);
+      color: var(--white);
+      font-size: 6.5pt;
+      font-weight: 700;
+      border-radius: 3px;
+      padding: 1px 6px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .exp-org {
+      font-size: 8pt;
+      font-weight: 600;
+      color: var(--blue);
+      margin-bottom: 2px;
+    }
+    .exp-meta {
+      font-size: 7.5pt;
+      color: var(--muted);
+      margin-bottom: 5px;
+      display: flex;
+      gap: 12px;
+    }
+    .exp-meta i { margin-right: 3px; }
+
+    .exp-list {
+      list-style: none;
+      padding: 0;
+    }
+    .exp-list li {
+      font-size: 8pt;
+      color: var(--muted);
+      padding-left: 12px;
+      position: relative;
+      margin-bottom: 3px;
+      line-height: 1.5;
+    }
+    .exp-list li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--blue);
+      font-size: 7pt;
+      top: 1px;
+    }
+
+    /* Education entry */
+    .edu-entry {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 10px;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .edu-year {
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: var(--blue);
+      white-space: nowrap;
+      min-width: 32px;
+      padding-top: 2px;
+    }
+    .edu-content { flex: 1; }
+    .edu-qual {
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .edu-inst {
+      font-size: 8pt;
+      color: var(--muted);
+    }
+
+    /* Reference entry */
+    .ref-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .ref-card {
+      border: 1px solid var(--blue);
+      border-radius: 4px;
+      padding: 9px 10px;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .ref-name {
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .ref-role {
+      font-size: 7.5pt;
+      color: var(--blue);
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+    .ref-info {
+      font-size: 7.5pt;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .ref-phone {
+      font-size: 7.5pt;
+      color: var(--blue);
+      margin-top: 4px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* Declaration */
+    .declaration {
+      background: var(--blue);
+      color: var(--white);
+      border-radius: 4px;
+      padding: 12px 16px;
+      text-align: center;
+      margin-top: 14px;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .declaration p {
+      font-size: 8pt;
+      opacity: 0.88;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+    .declaration .sig-name {
+      font-size: 10pt;
+      font-weight: 800;
+    }
+    .declaration .sig-role {
+      font-size: 7.5pt;
+      opacity: 0.75;
+      margin-top: 2px;
+    }
+
+    /* Divider between exp entries */
+    .exp-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 10px 0;
+    }
+
+    /* ============================================================
+       PRINT STYLES
+       ============================================================ */
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 0; /* Remove white margins around the page */
+      }
+
+      html, body {
+        background: white;
+        font-size: 9pt;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .print-bar { display: none !important; }
+
+      .page-wrap {
+        margin: 0;
+        width: 100%;
+        min-height: 100vh;
+        box-shadow: none;
+      }
+
+      .cv-body {
+        display: table;
+        width: 100%;
+        height: 100%;
+        min-height: 0;
+        background: transparent;
+      }
+
+      .sidebar {
+        display: table-cell;
+        width: 62mm;
+        background: var(--blue) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        vertical-align: top;
+      }
+
+      .main {
+        display: table-cell;
+        vertical-align: top;
+      }
+
+      /* Add some padding since we removed @page margins */
+      .cv-header {
+        padding: 30px 40px; 
+      }
+      .sidebar {
+        padding: 30px 24px;
+      }
+      .main {
+        padding: 30px 32px;
+      }
+
+      .cv-header {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .sec {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .exp-entry {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .ref-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .declaration {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .edu-entry {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- PRINT BAR (screen only) -->
+  <div class="print-bar" id="printBar">
+    <span>S. Mohamed Shihab — Curriculum Vitae &nbsp;|&nbsp; A4 PDF Ready</span>
+    <button class="print-btn" onclick="window.print()">
+      <i class="fa-solid fa-print"></i> Print / Save as PDF
+    </button>
+  </div>
+
+  <!-- ================================================================
+       A4 PAGE
+       ================================================================ -->
+  <div class="page-wrap">
+
+    <!-- ── HEADER ── -->
+    <header class="cv-header">
+      <img src="./photos/profile-1.jpeg" alt="Mohamed Shihab Sulaiman" />
+      <div class="cv-header-text">
+        <div class="cv-label">Curriculum Vitae</div>
+        <div class="cv-name">Mohamed Shihab Sulaiman</div>
+        <div class="cv-role">Sales Consultant</div>
+        <div class="cv-company">Afro Anglo Oil &amp; Gas Block Consultant &nbsp;·&nbsp; United Kingdom</div>
+        <div class="cv-chips">
+          <span class="chip"><i class="fa-solid fa-flag"></i> Sri Lankan</span>
+          <span class="chip"><i class="fa-solid fa-user"></i> Male &middot; 42</span>
+          <span class="chip"><i class="fa-solid fa-ring"></i> Married</span>
+          <span class="chip"><i class="fa-solid fa-location-dot"></i> Grays, UK</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ── TWO-COLUMN BODY ── -->
+    <div class="cv-body">
+
+      <!-- ========== SIDEBAR ========== -->
+      <aside class="sidebar">
+
+        <!-- Contact -->
+        <div class="sb-section">
+          <div class="sb-title">Contact</div>
+
+          <div class="sb-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:asfana1986@gmail.com">asfana1986@gmail.com</a>
+          </div>
+
+          <div class="sb-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+4407438324788">07438 324 788</a>
+          </div>
+
+          <div class="sb-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn Profile</a>
+          </div>
+
+          <div class="sb-item">
+            <i class="fa-brands fa-google"></i>
+            <a href="mailto:asfana1986@gmail.com">Gmail</a>
+          </div>
+
+          <div class="sb-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>No-13, Chadwell Road,<br/>Grays, United Kingdom</span>
+          </div>
+        </div>
+
+        <!-- Core Skills -->
+        <div class="sb-section">
+          <div class="sb-title">Core Skills</div>
+          <div class="sb-skill"><i class="fa-solid fa-chart-line"></i>Sales Consultancy</div>
+          <div class="sb-skill"><i class="fa-solid fa-people-group"></i>Team Leadership</div>
+          <div class="sb-skill"><i class="fa-solid fa-book-open"></i>Curriculum Development</div>
+          <div class="sb-skill"><i class="fa-solid fa-chess"></i>Strategic Planning</div>
+          <div class="sb-skill"><i class="fa-solid fa-users-gear"></i>HR Management</div>
+          <div class="sb-skill"><i class="fa-solid fa-clipboard-check"></i>Performance Appraisal</div>
+          <div class="sb-skill"><i class="fa-solid fa-coins"></i>Budget Management</div>
+          <div class="sb-skill"><i class="fa-solid fa-graduation-cap"></i>Academic Direction</div>
+          <div class="sb-skill"><i class="fa-solid fa-handshake"></i>Stakeholder Engagement</div>
+          <div class="sb-skill"><i class="fa-solid fa-bullhorn"></i>Business Development</div>
+          <div class="sb-skill"><i class="fa-solid fa-magnifying-glass"></i>Research &amp; Analysis</div>
+          <div class="sb-skill"><i class="fa-solid fa-laptop"></i>Microsoft Office Suite</div>
+        </div>
+
+        <!-- Languages -->
+        <div class="sb-section">
+          <div class="sb-title">Languages</div>
+
+          <div class="sb-lang">
+            <div class="sb-lang-name">English</div>
+            <div class="sb-lang-level">Spoken · Writing · Reading</div>
+            <div class="lang-dots">
+              <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+              <div class="dot"></div><div class="dot"></div>
+            </div>
+          </div>
+
+          <div class="sb-lang">
+            <div class="sb-lang-name">Tamil</div>
+            <div class="sb-lang-level">Native</div>
+            <div class="lang-dots">
+              <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+              <div class="dot"></div><div class="dot"></div>
+            </div>
+          </div>
+
+          <div class="sb-lang">
+            <div class="sb-lang-name">Sinhala</div>
+            <div class="sb-lang-level">Native</div>
+            <div class="lang-dots">
+              <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+              <div class="dot"></div><div class="dot empty"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="sb-section">
+          <div class="sb-title">Interests</div>
+          <div class="sb-item"><i class="fa-solid fa-hands-holding-heart"></i><span>Social Services</span></div>
+          <div class="sb-item"><i class="fa-solid fa-book-open"></i><span>Reading</span></div>
+          <div class="sb-item"><i class="fa-solid fa-music"></i><span>Music</span></div>
+        </div>
+
+        <!-- Community -->
+        <div class="sb-section">
+          <div class="sb-title">Community</div>
+          <div class="sb-item">
+            <i class="fa-solid fa-flag-checkered"></i>
+            <span>Leadership Camps &amp; Seminars – 5 years across Sri Lankan Universities</span>
+          </div>
+          <div class="sb-item">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span>Awareness Programs &amp; Business Promotion initiatives</span>
+          </div>
+        </div>
+
+      </aside>
+
+      <!-- ========== MAIN CONTENT ========== -->
+      <main class="main">
+
+        <!-- Career Objective -->
+        <div class="sec">
+          <div class="sec-title"><i class="fa-solid fa-bullseye"></i> Career Objective</div>
+          <p class="para">
+            Accomplish the task, which is challenging, and be part of the organization – which my tenure shall be assigned with in achieving the goals and objectives.
+          </p>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="sec">
+          <div class="sec-title"><i class="fa-solid fa-user-tie"></i> Professional Summary</div>
+          <p class="para">
+            Highly skilled and resourceful professional with over <strong>16 years of leadership experience</strong> spanning academic administration, human resources management, and business development. Exceptionally knowledgeable in certification standards and adept at maintaining stellar student retention rates. Currently channelling deep institutional expertise into a dynamic <strong>Sales Consultancy</strong> role within the Oil &amp; Gas sector in the United Kingdom.
+          </p>
+        </div>
+
+        <!-- Working Experience -->
+        <div class="sec">
+          <div class="sec-title"><i class="fa-solid fa-briefcase"></i> Working Experience</div>
+
+          <!-- Job 1 -->
+          <div class="exp-entry">
+            <div class="exp-header">
+              <div class="exp-role">Sales Consultant</div>
+              <div class="exp-badge">Current</div>
+            </div>
+            <div class="exp-org">Afro Anglo Oil &amp; Gas Block Consultant</div>
+            <div class="exp-meta">
+              <span><i class="fa-regular fa-calendar"></i>2024 – Present</span>
+              <span><i class="fa-solid fa-location-dot"></i>United Kingdom</span>
+            </div>
+            <ul class="exp-list">
+              <li>Providing expert consulting services in the Oil &amp; Gas sector, focusing on client acquisition and business development.</li>
+              <li>Building and managing strategic client relationships across Afro-Anglo business corridors.</li>
+            </ul>
+          </div>
+
+          <hr class="exp-divider" />
+
+          <!-- Job 2 -->
+          <div class="exp-entry">
+            <div class="exp-role">Managing Director</div>
+            <div class="exp-org">Canadian College – Vavuniya</div>
+            <div class="exp-meta">
+              <span><i class="fa-regular fa-calendar"></i>8 Years</span>
+              <span><i class="fa-solid fa-location-dot"></i>Sri Lanka</span>
+            </div>
+            <ul class="exp-list">
+              <li>Supervised all administrative, financial and curricular program aspects.</li>
+              <li>Directed program evolutions and designed strategies for program offering development.</li>
+              <li>Cultivated strategic partnerships with administrators and faculty.</li>
+              <li>Supervised academic labs and contributed to lab improvement planning.</li>
+              <li>Tracked student progress across a variety of service programs.</li>
+              <li>Prepared and submitted annual budget and related proposals and initiatives.</li>
+            </ul>
+          </div>
+
+          <hr class="exp-divider" />
+
+          <!-- Job 3 -->
+          <div class="exp-entry">
+            <div class="exp-role">Director of Studies</div>
+            <div class="exp-org">Golden College – Kandy &amp; Vavuniya</div>
+            <div class="exp-meta">
+              <span><i class="fa-regular fa-calendar"></i>6 Years</span>
+              <span><i class="fa-solid fa-location-dot"></i>Sri Lanka</span>
+            </div>
+            <ul class="exp-list">
+              <li>Conducted faculty evaluations for the Education Director as needed.</li>
+              <li>Ensured compliance with accreditation standards for Advisory Committee functions.</li>
+              <li>Designed and led professional development programs and activities.</li>
+              <li>Supervised faculty orientation and training.</li>
+            </ul>
+          </div>
+
+          <hr class="exp-divider" />
+
+          <!-- Job 4 -->
+          <div class="exp-entry">
+            <div class="exp-role">Head of Human Resources</div>
+            <div class="exp-org">ICET Campus – Colombo &amp; Anuradhapura</div>
+            <div class="exp-meta">
+              <span><i class="fa-regular fa-calendar"></i>2 Years</span>
+              <span><i class="fa-solid fa-location-dot"></i>Sri Lanka</span>
+            </div>
+            <ul class="exp-list">
+              <li>Developed HR plans and policies in conjunction with the company's overall development plan.</li>
+              <li>Overall responsibility of manpower planning and recruitments.</li>
+              <li>Developed induction programmes for new recruits and designed compensation plans and policies.</li>
+              <li>Implemented performance appraisal systems and co-ordinated with line managers.</li>
+              <li>Identified training needs; developed programs for constant employee learning and development.</li>
+              <li>Established organisational structure and implemented disciplinary &amp; welfare policies.</li>
+              <li>Managed exit processes, final settlements, and developed management decision reports.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="sec">
+          <div class="sec-title"><i class="fa-solid fa-graduation-cap"></i> Education</div>
+
+          <div class="edu-entry">
+            <div class="edu-year">2016–<br/>2019</div>
+            <div class="edu-content">
+              <div class="edu-qual">Bachelor of Business Administration (BBA)</div>
+              <div class="edu-inst"><i class="fa-solid fa-university" style="color:var(--blue);margin-right:4px;font-size:7pt"></i>Mahatma Gandhi Kashi Vidyapith, India</div>
+            </div>
+          </div>
+
+          <div class="edu-entry">
+            <div class="edu-year">2003</div>
+            <div class="edu-content">
+              <div class="edu-qual">G.C.E. Advanced Level (A/L)</div>
+              <div class="edu-inst">Sri Lanka — Passed</div>
+            </div>
+          </div>
+
+          <div class="edu-entry">
+            <div class="edu-year">2000</div>
+            <div class="edu-content">
+              <div class="edu-qual">G.C.E. Ordinary Level (O/L)</div>
+              <div class="edu-inst">Sri Lanka — Passed</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- References -->
+        <div class="sec">
+          <div class="sec-title"><i class="fa-solid fa-id-card"></i> References</div>
+          <div class="ref-grid">
+
+            <div class="ref-card">
+              <div class="ref-name">S. Thilaganathan</div>
+              <div class="ref-role">Lecturer in Mathematics</div>
+              <div class="ref-info">
+                Faculty of Applied Science<br/>
+                Vavuniya Campus, University of Jaffna
+              </div>
+              <div class="ref-phone"><i class="fa-solid fa-phone"></i> 0094 773 46 86 80</div>
+            </div>
+
+            <div class="ref-card">
+              <div class="ref-name">Dr. A.H.M. Riyas M.B.B.S</div>
+              <div class="ref-role">Medical Doctor</div>
+              <div class="ref-info">
+                Teaching Hospital<br/>
+                Anuradhapura, Sri Lanka
+              </div>
+              <div class="ref-phone"><i class="fa-solid fa-phone"></i> 0094 777 66 81 93</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Declaration -->
+        <div class="declaration">
+          <p>I, the undersigned, certify that the statements made by me here are true to the best of my knowledge and belief. I understand that any willful misstatements by me are liable to dismissal if employed.</p>
+          <div class="sig-name">Mohamed Shihab Sulaiman</div>
+          <div class="sig-role">Sales Consultant &amp; Academic Leader</div>
+        </div>
+
+      </main>
+    </div><!-- end cv-body -->
+
+  </div><!-- end page-wrap -->
+
+</body>
+</html>
