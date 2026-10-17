@@ -472,6 +472,137 @@
     }
     .contact-row a:hover { color: var(--blue); }
 
+    /* ── RESEARCH & AWARDS ────────────────────────────── */
+    #research { background: #ffffff; }
+    .research-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      margin-bottom: 32px;
+    }
+    @media (max-width: 900px) {
+      .research-grid { grid-template-columns: 1fr; }
+    }
+    .res-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      transition: box-shadow 0.25s, transform 0.25s;
+    }
+    .res-card:hover {
+      box-shadow: 0 10px 30px rgba(29, 78, 216, 0.1);
+      transform: translateY(-2px);
+    }
+    .res-card.gold-border {
+      border: 1.5px solid #f59e0b;
+      background: linear-gradient(180deg, #fffdf5 0%, #ffffff 100%);
+    }
+    .res-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+    .res-badge.gold {
+      background: #fef3c7;
+      color: #92400e;
+      border: 1px solid #fde68a;
+    }
+    .res-badge.blue {
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #bfdbfe;
+    }
+    .res-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+    .res-meta {
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+    .res-img-wrap {
+      margin: 14px 0;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .res-img-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .res-btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .res-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      font-size: 12.5px;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .res-btn-gold {
+      background: #b45309;
+      color: #ffffff;
+    }
+    .res-btn-gold:hover {
+      background: #92400e;
+    }
+    .res-btn-outline {
+      background: #ffffff;
+      color: var(--blue);
+      border: 1px solid var(--border);
+    }
+    .res-btn-outline:hover {
+      background: #eff6ff;
+      border-color: var(--blue);
+    }
+    .pub-table-wrap {
+      overflow-x: auto;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px;
+      margin-top: 20px;
+    }
+    .pub-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+    }
+    .pub-table th, .pub-table td {
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .pub-table th {
+      color: var(--blue);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 11.5px;
+      letter-spacing: 0.05em;
+    }
+
     /* ── EXPERIENCE ───────────────────────────────────── */
     #experience { background: var(--white); }
     .timeline {
@@ -820,6 +951,7 @@
     <div class="nav-brand">Mohamed Shihab Sulaiman</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#research">Research &amp; Awards</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#education">Education</a></li>
@@ -839,16 +971,16 @@
 
         <div class="hero-status">
           <span class="status-dot"></span>
-          Available for Opportunities
+          Available for Opportunities &amp; Academic Collaborations
         </div>
 
         <p class="hero-greeting">Hi, I'm</p>
         <h1 class="hero-name">Mohamed Shihab<br/>Sulaiman</h1>
 
         <p class="hero-desc">
-          <strong>Sales Consultant</strong> at Afro Anglo Oil &amp; Gas Block Consultant, United Kingdom.
-          Former Academic Director &amp; HR Head with
-          <strong>16+ years of leadership experience</strong> across Sri Lanka and the UK.
+          <strong>Academic Leader &amp; Higher Education AI Researcher</strong> · Sales Consultant at Afro Anglo Oil &amp; Gas, UK.
+          Ordinary Member of the <strong>British Academy of Management (BAM)</strong> &amp; <strong>CMI</strong> with
+          <strong>16+ years of executive leadership experience</strong> across Sri Lanka and the UK.
         </p>
 
         <div class="hero-cta">
@@ -974,6 +1106,134 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       RESEARCH & SCHOLARLY AWARDS
+       ════════════════════════════════════════ -->
+  <section id="research">
+    <div class="container">
+      <p class="sec-label reveal">Scholarly Footprint &amp; Recognition</p>
+      <h2 class="sec-heading reveal">Research, Awards &amp; Peer Reviews</h2>
+      <div class="sec-divider reveal"></div>
+
+      <div class="research-grid">
+
+        <!-- Card 1: Award -->
+        <div class="res-card gold-border reveal">
+          <span class="res-badge gold"><i class="fa-solid fa-trophy"></i> Best Research Paper Award 2024</span>
+          <h3 class="res-title">Technology-Enabled Student Retention in Higher Education</h3>
+          <p class="res-meta">
+            Conferred by <strong>Shodh Sagar</strong> to Dr. Michael O. Edwards &amp; Mohamed Shihab Sulaiman for outstanding research in predictive analytics and machine learning applications in university student success.<br/>
+            <strong>Journal:</strong> International Journal for Research Publication &amp; Seminar (JRPS), Vol. 15, Issue 4 · <strong>Unique ID:</strong> <code>FEDE</code>
+          </p>
+          <div class="res-img-wrap">
+            <a href="./assets/shodh-sagar-best-paper-award-2024.jpeg" target="_blank">
+              <img src="./assets/shodh-sagar-best-paper-award-2024.jpeg" alt="Best Research Paper Award 2024 - Shodh Sagar" />
+            </a>
+          </div>
+          <div class="res-btn-row">
+            <a href="https://events.shodhsagar.org/index.php/awards/search/index?query=FEDE" target="_blank" class="res-btn res-btn-gold">
+              <i class="fa-solid fa-certificate"></i> Verify Award (ID: FEDE)
+            </a>
+            <a href="https://jrpsjournal.in/index.php/j/article/view/401" target="_blank" class="res-btn res-btn-outline">
+              <i class="fa-solid fa-book-open"></i> Read in JRPS
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Peer Review & Memberships -->
+        <div class="res-card reveal">
+          <span class="res-badge blue"><i class="fa-solid fa-gavel"></i> Springer Nature Peer Reviewer</span>
+          <h3 class="res-title">International Journal of System Assurance Engineering and Management</h3>
+          <p class="res-meta">
+            Invited peer reviewer for <strong>Springer Nature</strong> evaluating high-level manuscripts on Network Data Envelopment Analysis (DEA), Big Data, and Artificial Intelligence integration in higher education evaluation frameworks.
+          </p>
+          <div class="res-img-wrap">
+            <a href="./assets/springer-peer-reviewer-record.jpeg" target="_blank">
+              <img src="./assets/springer-peer-reviewer-record.jpeg" alt="Springer Editorial Reviewer Assignments Record" />
+            </a>
+          </div>
+          <div class="res-btn-row">
+            <a href="assets/BAM-British-Academy-of-Management-Membership.pdf" target="_blank" class="res-btn res-btn-outline">
+              <i class="fa-solid fa-building-columns"></i> BAM Member (ORD-48762)
+            </a>
+            <a href="assets/CMI-Chartered-Management-Institute-Membership.pdf" target="_blank" class="res-btn res-btn-outline">
+              <i class="fa-solid fa-certificate"></i> CMI Member (P05390598)
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Publications Table -->
+      <div class="pub-table-wrap reveal">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:12px;">
+          <h3 style="font-size:16px;font-weight:800;color:var(--text);"><i class="fa-solid fa-book-journal-whills" style="color:var(--blue);margin-right:6px;"></i> Peer-Reviewed Research Publications Index</h3>
+          <div style="display:flex;gap:8px;">
+            <a href="https://www.researchgate.net/profile/Mohamed-Shihab-Sulaiman" target="_blank" class="res-btn res-btn-outline" style="padding:5px 10px;font-size:11.5px;">
+              <i class="fa-brands fa-researchgate"></i> ResearchGate
+            </a>
+            <a href="https://scholar.google.com/scholar?q=%22Mohamed+Shihab+Sulaiman%22" target="_blank" class="res-btn res-btn-outline" style="padding:5px 10px;font-size:11.5px;">
+              <i class="fa-brands fa-google-scholar"></i> Google Scholar
+            </a>
+            <a href="cv.html" target="_blank" class="res-btn res-btn-gold" style="padding:5px 10px;font-size:11.5px;">
+              <i class="fa-solid fa-file-invoice"></i> View 3-Page CV
+            </a>
+          </div>
+        </div>
+
+        <table class="pub-table">
+          <thead>
+            <tr>
+              <th style="width:70px;">Year</th>
+              <th>Research Paper Title</th>
+              <th>Journal / Venue</th>
+              <th>Thematic Area</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>2024</strong></td>
+              <td><strong>Technology-Enabled Student Retention in Higher Education: Predictive Analytics, Engagement and Academic Success</strong></td>
+              <td>International Journal for Research Publication &amp; Seminar (JRPS)</td>
+              <td><span style="color:#b45309;font-weight:700;"><i class="fa-solid fa-award"></i> Best Paper Award 2024</span></td>
+            </tr>
+            <tr>
+              <td><strong>2025</strong></td>
+              <td><strong>Digital Transformation in Higher Education Management: Opportunities, Challenges and Institutional Readiness</strong></td>
+              <td>Int. Journal of Research Publications in Eng. Tech. &amp; Management</td>
+              <td>Digital Transformation</td>
+            </tr>
+            <tr>
+              <td><strong>2026</strong></td>
+              <td><strong>AI-Enabled Higher Education Management: A Strategic Framework for Improving Student Retention</strong></td>
+              <td>Academic Research Series</td>
+              <td>Artificial Intelligence in HE</td>
+            </tr>
+            <tr>
+              <td><strong>2025</strong></td>
+              <td><strong>Artificial Intelligence Adoption in Higher Education Administration: Governance and Implications</strong></td>
+              <td>Higher Education Management Review</td>
+              <td>AI Governance &amp; Policy</td>
+            </tr>
+            <tr>
+              <td><strong>2024</strong></td>
+              <td><strong>Quality Assurance and Accreditation in Higher Education: The Role of Educational Leadership</strong></td>
+              <td>Educational Leadership &amp; Quality Journal</td>
+              <td>Quality Assurance &amp; Standards</td>
+            </tr>
+            <tr>
+              <td><strong>2023</strong></td>
+              <td><strong>Strategic Educational Leadership and Institutional Performance in Higher Education</strong></td>
+              <td>International Management Studies</td>
+              <td>Sustainable Leadership</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
     </div>
   </section>
 

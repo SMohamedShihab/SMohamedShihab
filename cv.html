@@ -3,534 +3,752 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohamed Shihab Sulaiman – Curriculum Vitae</title>
-  <meta name="description" content="CV of Mohamed Shihab Sulaiman – Sales Consultant, Academic Director & HR Leader." />
+  <title>Mohamed Shihab Sulaiman | Curriculum Vitae — UK Global Talent Visa</title>
+  <meta name="description" content="Official Curriculum Vitae of Mohamed Shihab Sulaiman (S. M. Shihab) – Academic Director, Higher Education & AI Leadership Researcher, Sales Consultant. UK Global Talent Visa Portfolio." />
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <style>
     /* ============================================================
-       GLOBAL RESET & VARIABLES
+       DESIGN SYSTEM & CSS RESET
        ============================================================ */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --blue:       #1d4ed8;   /* ONE blue for everything */
-      --blue-dark:  #1e3a8a;   /* slightly darker for header/sidebar */
-      --white:      #ffffff;
-      --text:       #111827;
-      --muted:      #4b5563;
-      --border:     #d1d5db;
-      --page-w:     210mm;
-      --page-h:     297mm;
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    html, body {
-      font-family: 'Inter', sans-serif;
-      font-size: 9.5pt;
-      background: #e5e7eb;
-      color: var(--text);
-      line-height: 1.5;
+    :root {
+      --primary:       #0f2942;   /* Deep Executive Navy */
+      --primary-light: #1e3a5f;
+      --accent:        #1d4ed8;   /* Royal Blue Accent */
+      --accent-soft:   #eff6ff;
+      --gold:          #b45309;   /* Verifiable Award Gold */
+      --gold-bg:       #fef3c7;
+      --gold-border:   #f59e0b;
+      --emerald:       #047857;
+      --emerald-bg:    #ecfdf5;
+      --text-main:     #0f172a;   /* Slate 900 */
+      --text-muted:    #334155;   /* Slate 700 */
+      --text-light:    #64748b;   /* Slate 500 */
+      --border:        #cbd5e1;   /* Slate 300 */
+      --border-light:  #e2e8f0;
+      --bg-canvas:     #e2e8f0;
+      --bg-card:       #f8fafc;
+      --page-w:        210mm;
+      --page-h:        297mm;
+    }
+
+    html {
+      font-size: 9pt;
+      line-height: 1.45;
+      background: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
     }
 
     /* ============================================================
-       PRINT BUTTON (screen only)
+       TOP SCREEN CONTROL BAR (Screen Only)
        ============================================================ */
-    .print-bar {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      background: var(--blue-dark);
-      color: var(--white);
+    .screen-bar {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: #0b192c;
+      color: #ffffff;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
       padding: 10px 24px;
-      font-size: 13px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      gap: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
     }
-    .print-bar span { opacity: 0.8; font-size: 12px; }
-    .print-btn {
-      background: var(--white);
-      color: var(--blue-dark);
-      border: none;
-      border-radius: 6px;
-      padding: 8px 22px;
-      font-size: 13px;
-      font-weight: 700;
-      cursor: pointer;
+
+    .bar-info {
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-family: 'Inter', sans-serif;
-      transition: opacity 0.2s;
+      gap: 14px;
+      font-size: 13px;
     }
-    .print-btn:hover { opacity: 0.88; }
+
+    .bar-title {
+      font-weight: 700;
+      letter-spacing: -0.2px;
+    }
+
+    .bar-pill {
+      background: rgba(29, 78, 216, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 11px;
+      color: #93c5fd;
+      font-weight: 600;
+    }
+
+    .bar-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .bar-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .bar-btn-primary {
+      background: #2563eb;
+      color: #ffffff;
+    }
+    .bar-btn-primary:hover {
+      background: #1d4ed8;
+      transform: translateY(-1px);
+    }
+
+    .bar-btn-outline {
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .bar-btn-outline:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
 
     /* ============================================================
-       A4 PAGE WRAPPER
+       PAGE CONTAINER ARCHITECTURE (Strict 3 Pages of A4)
        ============================================================ */
-    .page-wrap {
-      margin: 56px auto 40px;   /* 56px = print-bar height */
+    .document-container {
+      margin: 24px auto 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .cv-page {
       width: var(--page-w);
       min-height: var(--page-h);
-      background: var(--white);
-      box-shadow: 0 4px 40px rgba(0,0,0,0.18);
+      height: var(--page-h);
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 14mm 16mm 12mm;
+      overflow: hidden;
+    }
+
+    .page-content {
+      flex: 1;
       display: flex;
       flex-direction: column;
     }
 
-    /* ============================================================
-       HEADER STRIP (full width, blue)
-       ============================================================ */
-    .cv-header {
-      background: var(--blue);
-      color: var(--white);
+    /* Running Header & Footer */
+    .running-header {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 20px;
-      padding: 22px 28px;
+      padding-bottom: 6px;
+      margin-bottom: 10px;
+      border-bottom: 1.5px solid var(--border-light);
+      font-size: 7.5pt;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .running-header strong {
+      color: var(--primary);
     }
 
-    .cv-header img {
-      width: 86px;
-      height: 86px;
+    .running-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 6px;
+      margin-top: 8px;
+      border-top: 1px solid var(--border-light);
+      font-size: 7.2pt;
+      color: var(--text-light);
+    }
+    .running-footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* ============================================================
+       PAGE 1 HEADER: IDENTITY & RESEARCH FOOTPRINT
+       ============================================================ */
+    .profile-hero {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: #ffffff;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .profile-avatar-wrap {
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .profile-avatar {
+      width: 78px;
+      height: 78px;
       border-radius: 50%;
       object-fit: cover;
       object-position: top;
-      border: 3px solid var(--white);
-      flex-shrink: 0;
+      border: 3px solid rgba(255, 255, 255, 0.95);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+      display: block;
     }
 
-    .cv-header-text { flex: 1; }
-    .cv-label {
-      font-size: 7.5pt;
-      font-weight: 600;
-      letter-spacing: 0.18em;
+    .profile-hero-text {
+      flex: 1;
+    }
+
+    .hero-eyebrow {
+      font-size: 7.2pt;
+      font-weight: 700;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
-      opacity: 0.8;
-      margin-bottom: 3px;
-    }
-    .cv-name {
-      font-size: 22pt;
-      font-weight: 800;
-      line-height: 1.1;
-      letter-spacing: -0.3px;
-    }
-    .cv-role {
-      font-size: 11pt;
-      font-weight: 300;
-      opacity: 0.9;
-      margin-top: 2px;
-    }
-    .cv-company {
-      font-size: 8pt;
-      opacity: 0.75;
-      margin-top: 4px;
+      color: #93c5fd;
+      margin-bottom: 2px;
     }
 
-    /* chips row */
-    .cv-chips {
+    .hero-name {
+      font-size: 19pt;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+      line-height: 1.1;
+    }
+
+    .hero-title {
+      font-size: 9.8pt;
+      font-weight: 400;
+      color: #e2e8f0;
+      margin-top: 3px;
+    }
+
+    .hero-meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+      margin-top: 8px;
+      font-size: 7.5pt;
+      color: #cbd5e1;
+    }
+
+    .hero-meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .hero-meta-item a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .hero-meta-item i {
+      color: #60a5fa;
+    }
+
+    /* Badges Bar */
+    .credentials-strip {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
-      margin-top: 10px;
+      margin-bottom: 12px;
     }
-    .chip {
-      background: rgba(255,255,255,0.18);
-      border: 1px solid rgba(255,255,255,0.3);
-      border-radius: 99px;
-      padding: 2px 10px;
-      font-size: 7.5pt;
-      display: flex;
+
+    .badge-pill {
+      display: inline-flex;
       align-items: center;
       gap: 5px;
+      font-size: 7.2pt;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-decoration: none;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      color: var(--text-main);
+    }
+    .badge-pill i {
+      font-size: 8pt;
+    }
+    .badge-pill.bam {
+      background: #0f172a;
+      color: #ffffff;
+      border-color: #0f172a;
+    }
+    .badge-pill.cmi {
+      background: #4c1d95;
+      color: #ffffff;
+      border-color: #4c1d95;
+    }
+    .badge-pill.award {
+      background: var(--gold-bg);
+      color: #78350f;
+      border-color: var(--gold-border);
+      font-weight: 700;
+    }
+    .badge-pill.scholar {
+      background: var(--accent-soft);
+      color: #1e40af;
+      border-color: #93c5fd;
+    }
+    .badge-pill.springer {
+      background: #fff7ed;
+      color: #9a3412;
+      border-color: #fdba74;
     }
 
     /* ============================================================
-       TWO-COLUMN BODY
+       TYPOGRAPHY & CONTENT SECTIONS
        ============================================================ */
-    .cv-body {
-      display: flex;
-      flex: 1;
+    .sec-block {
+      margin-bottom: 11px;
     }
 
-    /* --- SIDEBAR --- */
-    .sidebar {
-      width: 62mm;
-      background: var(--blue);
-      color: var(--white);
-      padding: 20px 16px;
-      flex-shrink: 0;
-    }
-
-    .sb-section { margin-bottom: 20px; }
-
-    .sb-title {
-      font-size: 7pt;
-      font-weight: 700;
-      letter-spacing: 0.18em;
+    .sec-heading {
+      font-size: 9pt;
+      font-weight: 800;
+      color: var(--primary);
       text-transform: uppercase;
-      opacity: 0.65;
-      margin-bottom: 10px;
-      padding-bottom: 4px;
-      border-bottom: 1px solid rgba(255,255,255,0.25);
-    }
-
-    .sb-item {
+      letter-spacing: 0.08em;
       display: flex;
-      align-items: flex-start;
-      gap: 8px;
-      margin-bottom: 9px;
-      font-size: 8pt;
-      line-height: 1.45;
+      align-items: center;
+      gap: 6px;
+      padding-bottom: 3px;
+      margin-bottom: 7px;
+      border-bottom: 1.8px solid var(--accent);
     }
-    .sb-item i {
-      width: 13px;
-      text-align: center;
-      margin-top: 2px;
-      flex-shrink: 0;
-      opacity: 0.85;
-    }
-    .sb-item a {
-      color: var(--white);
-      text-decoration: none;
-      word-break: break-all;
+    .sec-heading i {
+      color: var(--accent);
+      font-size: 8.5pt;
     }
 
-    .sb-skill {
-      background: rgba(255,255,255,0.15);
-      border: 1px solid rgba(255,255,255,0.25);
-      border-radius: 3px;
-      padding: 3px 8px;
+    .sec-subtext {
+      font-size: 8pt;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
+
+    /* Executive Callout / Profile */
+    .profile-summary-box {
+      background: var(--bg-card);
+      border-left: 3.5px solid var(--accent);
+      padding: 8px 12px;
+      font-size: 8pt;
+      color: var(--text-muted);
+      line-height: 1.55;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 11px;
+    }
+
+    /* Two Column Split */
+    .grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    /* Core Competencies Box */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .skill-tag {
       font-size: 7.5pt;
-      margin-bottom: 5px;
+      color: var(--text-main);
       display: flex;
       align-items: center;
       gap: 6px;
     }
-    .sb-skill i { opacity: 0.75; font-size: 7pt; flex-shrink: 0; }
-
-    .sb-lang {
-      margin-bottom: 8px;
-    }
-    .sb-lang-name {
-      font-size: 8pt;
-      font-weight: 600;
-    }
-    .sb-lang-level {
-      font-size: 7pt;
-      opacity: 0.7;
-    }
-    .lang-dots {
-      display: flex;
-      gap: 3px;
-      margin-top: 3px;
-    }
-    .dot {
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: var(--white);
-    }
-    .dot.empty {
-      background: rgba(255,255,255,0.25);
+    .skill-tag i {
+      color: var(--accent);
+      font-size: 6.5pt;
     }
 
-    /* --- MAIN --- */
-    .main {
-      flex: 1;
-      padding: 20px 22px;
-      overflow: hidden;
+    /* Timeline / Experience Items */
+    .exp-item {
+      margin-bottom: 9px;
+      position: relative;
     }
 
-    /* Section block */
-    .sec {
-      margin-bottom: 16px;
-      break-inside: avoid;
-      page-break-inside: avoid;
-    }
-
-    .sec-title {
-      font-size: 9pt;
-      font-weight: 700;
-      color: var(--blue);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      margin-bottom: 8px;
-      padding-bottom: 5px;
-      border-bottom: 2px solid var(--blue);
-      display: flex;
-      align-items: center;
-      gap: 7px;
-    }
-    .sec-title i { font-size: 9pt; }
-
-    /* Objective / Summary */
-    .para {
-      font-size: 8.5pt;
-      color: var(--muted);
-      line-height: 1.6;
-      border-left: 3px solid var(--blue);
-      padding-left: 10px;
-    }
-
-    /* Experience entry */
-    .exp-entry {
-      margin-bottom: 13px;
-      break-inside: avoid;
-      page-break-inside: avoid;
-    }
-
-    .exp-header {
+    .exp-row-top {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: baseline;
       gap: 8px;
-      margin-bottom: 1px;
     }
-    .exp-role {
-      font-size: 9pt;
+
+    .exp-position {
+      font-size: 8.8pt;
       font-weight: 700;
-      color: var(--text);
+      color: var(--text-main);
     }
-    .exp-badge {
-      background: var(--blue);
-      color: var(--white);
-      font-size: 6.5pt;
-      font-weight: 700;
-      border-radius: 3px;
-      padding: 1px 6px;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-    .exp-org {
-      font-size: 8pt;
+
+    .exp-period {
+      font-size: 7.5pt;
       font-weight: 600;
-      color: var(--blue);
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    .exp-org-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 7.8pt;
+      color: var(--primary-light);
+      font-weight: 600;
+      margin-top: 1px;
+      margin-bottom: 3px;
+    }
+
+    .exp-location {
+      font-weight: 400;
+      color: var(--text-light);
+    }
+
+    .bullet-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .bullet-list li {
+      font-size: 7.8pt;
+      color: var(--text-muted);
+      line-height: 1.45;
+      padding-left: 11px;
+      position: relative;
       margin-bottom: 2px;
     }
-    .exp-meta {
-      font-size: 7.5pt;
-      color: var(--muted);
-      margin-bottom: 5px;
-      display: flex;
-      gap: 12px;
-    }
-    .exp-meta i { margin-right: 3px; }
-
-    .exp-list {
-      list-style: none;
-      padding: 0;
-    }
-    .exp-list li {
-      font-size: 8pt;
-      color: var(--muted);
-      padding-left: 12px;
-      position: relative;
-      margin-bottom: 3px;
-      line-height: 1.5;
-    }
-    .exp-list li::before {
-      content: '▸';
+    .bullet-list li::before {
+      content: "•";
       position: absolute;
-      left: 0;
-      color: var(--blue);
-      font-size: 7pt;
-      top: 1px;
-    }
-
-    /* Education entry */
-    .edu-entry {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 10px;
-      break-inside: avoid;
-      page-break-inside: avoid;
-    }
-    .edu-year {
-      font-size: 7.5pt;
+      left: 1px;
+      color: var(--accent);
       font-weight: 700;
-      color: var(--blue);
-      white-space: nowrap;
-      min-width: 32px;
-      padding-top: 2px;
-    }
-    .edu-content { flex: 1; }
-    .edu-qual {
-      font-size: 8.5pt;
-      font-weight: 700;
-      color: var(--text);
-    }
-    .edu-inst {
       font-size: 8pt;
-      color: var(--muted);
-    }
-
-    /* Reference entry */
-    .ref-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-    .ref-card {
-      border: 1px solid var(--blue);
-      border-radius: 4px;
-      padding: 9px 10px;
-      break-inside: avoid;
-      page-break-inside: avoid;
-    }
-    .ref-name {
-      font-size: 8.5pt;
-      font-weight: 700;
-      color: var(--text);
-    }
-    .ref-role {
-      font-size: 7.5pt;
-      color: var(--blue);
-      font-weight: 600;
-      margin-bottom: 3px;
-    }
-    .ref-info {
-      font-size: 7.5pt;
-      color: var(--muted);
-      line-height: 1.5;
-    }
-    .ref-phone {
-      font-size: 7.5pt;
-      color: var(--blue);
-      margin-top: 4px;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    /* Declaration */
-    .declaration {
-      background: var(--blue);
-      color: var(--white);
-      border-radius: 4px;
-      padding: 12px 16px;
-      text-align: center;
-      margin-top: 14px;
-      break-inside: avoid;
-      page-break-inside: avoid;
-    }
-    .declaration p {
-      font-size: 8pt;
-      opacity: 0.88;
-      line-height: 1.6;
-      margin-bottom: 8px;
-    }
-    .declaration .sig-name {
-      font-size: 10pt;
-      font-weight: 800;
-    }
-    .declaration .sig-role {
-      font-size: 7.5pt;
-      opacity: 0.75;
-      margin-top: 2px;
-    }
-
-    /* Divider between exp entries */
-    .exp-divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 10px 0;
     }
 
     /* ============================================================
-       PRINT STYLES
+       PAGE 2: PUBLICATIONS, CITATIONS & AWARDS
+       ============================================================ */
+    .award-card {
+      background: linear-gradient(to right, #fffbeb, #ffffff);
+      border: 1.5px solid var(--gold-border);
+      border-radius: 6px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .award-icon-box {
+      background: #fef3c7;
+      color: #b45309;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+      border: 1px solid #fde68a;
+    }
+
+    .award-details {
+      flex: 1;
+    }
+
+    .award-badge-top {
+      display: inline-block;
+      font-size: 6.8pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #92400e;
+      background: #fde68a;
+      padding: 1px 7px;
+      border-radius: 3px;
+      margin-bottom: 3px;
+    }
+
+    .award-title-text {
+      font-size: 9.5pt;
+      font-weight: 800;
+      color: #78350f;
+      line-height: 1.25;
+    }
+
+    .award-meta {
+      font-size: 7.6pt;
+      color: #451a03;
+      margin-top: 3px;
+      line-height: 1.4;
+    }
+
+    .award-verify-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 7.2pt;
+      font-weight: 700;
+      color: #b45309;
+      margin-top: 4px;
+      text-decoration: underline;
+    }
+
+    /* Publication Items */
+    .pub-entry {
+      background: #ffffff;
+      border-left: 3px solid var(--accent);
+      padding: 7px 10px;
+      margin-bottom: 8px;
+      border-top: 1px solid var(--border-light);
+      border-right: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+      border-radius: 0 4px 4px 0;
+    }
+
+    .pub-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .pub-title {
+      font-size: 8.3pt;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.35;
+    }
+
+    .pub-year-badge {
+      background: var(--primary);
+      color: #ffffff;
+      font-size: 6.8pt;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: 3px;
+      height: fit-content;
+      white-space: nowrap;
+    }
+
+    .pub-venue {
+      font-size: 7.5pt;
+      color: var(--accent);
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .pub-desc {
+      font-size: 7.3pt;
+      color: var(--text-muted);
+      margin-top: 3px;
+      line-height: 1.4;
+    }
+
+    .pub-footer-links {
+      display: flex;
+      gap: 12px;
+      margin-top: 4px;
+      font-size: 7.1pt;
+    }
+    .pub-footer-links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* ============================================================
+       PAGE 3: PEER REVIEW, ACCREDITATIONS & REFERENCES
+       ============================================================ */
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 9px 12px;
+      margin-bottom: 8px;
+    }
+
+    .review-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 8.2pt;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .review-journal {
+      font-size: 7.6pt;
+      color: #9a3412;
+      font-weight: 600;
+      margin-top: 1px;
+    }
+
+    .review-meta {
+      font-size: 7.2pt;
+      color: var(--text-light);
+      margin-top: 2px;
+    }
+
+    .review-desc {
+      font-size: 7.3pt;
+      color: var(--text-muted);
+      margin-top: 3px;
+      line-height: 1.4;
+    }
+
+    /* Affiliation Table */
+    .affil-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7.5pt;
+      margin-top: 4px;
+      margin-bottom: 8px;
+    }
+    .affil-table th, .affil-table td {
+      padding: 6px 8px;
+      text-align: left;
+      border: 1px solid var(--border-light);
+    }
+    .affil-table th {
+      background: var(--primary);
+      color: #ffffff;
+      font-weight: 600;
+    }
+    .affil-table td {
+      background: #ffffff;
+    }
+
+    /* References Box */
+    .ref-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .ref-box {
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 8px 10px;
+      background: var(--bg-card);
+    }
+    .ref-box-name {
+      font-size: 8.2pt;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .ref-box-title {
+      font-size: 7.4pt;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .ref-box-dept {
+      font-size: 7.2pt;
+      color: var(--text-muted);
+      line-height: 1.35;
+    }
+    .ref-box-phone {
+      font-size: 7.2pt;
+      color: var(--primary);
+      font-weight: 600;
+      margin-top: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* Formal Declaration */
+    .legal-declaration {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 9px 14px;
+      border-radius: 5px;
+      font-size: 7.4pt;
+      line-height: 1.45;
+      text-align: center;
+      margin-top: 6px;
+    }
+    .legal-declaration strong {
+      color: #93c5fd;
+    }
+
+    /* ============================================================
+       PRINT STYLES FOR EXACT 3-PAGE A4 OUTPUT
        ============================================================ */
     @media print {
       @page {
         size: A4 portrait;
-        margin: 0; /* Remove white margins around the page */
+        margin: 0; /* Handled inside .cv-page */
       }
 
       html, body {
-        background: white;
-        font-size: 9pt;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
+        background: #ffffff !important;
+        font-size: 8.8pt;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
       }
 
-      .print-bar { display: none !important; }
-
-      .page-wrap {
-        margin: 0;
-        width: 100%;
-        min-height: 100vh;
-        box-shadow: none;
+      .screen-bar {
+        display: none !important;
       }
 
-      .cv-body {
-        display: table;
-        width: 100%;
-        height: 100%;
-        min-height: 0;
-        background: transparent;
+      .document-container {
+        margin: 0 !important;
+        gap: 0 !important;
       }
 
-      .sidebar {
-        display: table-cell;
-        width: 62mm;
-        background: var(--blue) !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-        vertical-align: top;
+      .cv-page {
+        margin: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
+        width: 210mm !important;
+        height: 297mm !important;
+        max-height: 297mm !important;
+        page-break-after: always !important;
+        break-after: page !important;
+        padding: 12mm 14mm 10mm !important;
       }
 
-      .main {
-        display: table-cell;
-        vertical-align: top;
-      }
-
-      /* Add some padding since we removed @page margins */
-      .cv-header {
-        padding: 30px 40px; 
-      }
-      .sidebar {
-        padding: 30px 24px;
-      }
-      .main {
-        padding: 30px 32px;
-      }
-
-      .cv-header {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
-
-      .sec {
-        break-inside: avoid;
-        page-break-inside: avoid;
-      }
-
-      .exp-entry {
-        break-inside: avoid;
-        page-break-inside: avoid;
-      }
-
-      .ref-card {
-        break-inside: avoid;
-        page-break-inside: avoid;
-      }
-
-      .declaration {
-        break-inside: avoid;
-        page-break-inside: avoid;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
-
-      .edu-entry {
-        break-inside: avoid;
-        page-break-inside: avoid;
+      .cv-page:last-child {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
       }
     }
   </style>
@@ -538,312 +756,453 @@
 
 <body>
 
-  <!-- PRINT BAR (screen only) -->
-  <div class="print-bar" id="printBar">
-    <span>S. Mohamed Shihab — Curriculum Vitae &nbsp;|&nbsp; A4 PDF Ready</span>
-    <button class="print-btn" onclick="window.print()">
-      <i class="fa-solid fa-print"></i> Print / Save as PDF
-    </button>
-  </div>
+  <!-- ==============================================================
+       SCREEN CONTROLS & DIRECT VERIFICATION LINKS
+       ============================================================== -->
+  <header class="screen-bar" id="screenBar">
+    <div class="bar-info">
+      <span class="bar-title"><i class="fa-solid fa-file-invoice"></i> Mohamed Shihab Sulaiman — Curriculum Vitae</span>
+      <span class="bar-pill">UK Global Talent Visa Portfolio (3-Page A4)</span>
+    </div>
+    <div class="bar-actions">
+      <button class="bar-btn bar-btn-primary" onclick="window.print()">
+        <i class="fa-solid fa-print"></i> Print / Save 3-Page PDF
+      </button>
+      <a href="https://github.com/SMohamedShihab" target="_blank" class="bar-btn bar-btn-outline">
+        <i class="fa-brands fa-github"></i> GitHub Profile
+      </a>
+      <a href="https://www.researchgate.net/profile/Mohamed-Shihab-Sulaiman" target="_blank" class="bar-btn bar-btn-outline">
+        <i class="fa-brands fa-researchgate"></i> ResearchGate
+      </a>
+      <a href="https://events.shodhsagar.org/index.php/awards/search/index?query=FEDE" target="_blank" class="bar-btn bar-btn-outline">
+        <i class="fa-solid fa-award"></i> Verify Award (ID: FEDE)
+      </a>
+    </div>
+  </header>
 
-  <!-- ================================================================
-       A4 PAGE
-       ================================================================ -->
-  <div class="page-wrap">
+  <div class="document-container">
 
-    <!-- ── HEADER ── -->
-    <header class="cv-header">
-      <img src="./photos/profile-1.jpeg" alt="Mohamed Shihab Sulaiman" />
-      <div class="cv-header-text">
-        <div class="cv-label">Curriculum Vitae</div>
-        <div class="cv-name">Mohamed Shihab Sulaiman</div>
-        <div class="cv-role">Sales Consultant</div>
-        <div class="cv-company">Afro Anglo Oil &amp; Gas Block Consultant &nbsp;·&nbsp; United Kingdom</div>
-        <div class="cv-chips">
-          <span class="chip"><i class="fa-solid fa-flag"></i> Sri Lankan</span>
-          <span class="chip"><i class="fa-solid fa-user"></i> Male &middot; 42</span>
-          <span class="chip"><i class="fa-solid fa-ring"></i> Married</span>
-          <span class="chip"><i class="fa-solid fa-location-dot"></i> Grays, UK</span>
+    <!-- ============================================================
+         PAGE 1: IDENTITY, EXECUTIVE SUMMARY & EMPLOYMENT HISTORY
+         ============================================================ -->
+    <article class="cv-page" id="page-1">
+      <div class="page-content">
+
+        <!-- Running Header -->
+        <div class="running-header">
+          <span>Curriculum Vitae — <strong>Mohamed Shihab Sulaiman</strong></span>
+          <span>Page 1 of 3 &nbsp;·&nbsp; Executive Summary &amp; Leadership History</span>
         </div>
+
+        <!-- Hero Identity Banner -->
+        <section class="profile-hero">
+          <div class="profile-avatar-wrap">
+            <img src="./photos/profile-1.jpeg" alt="Mohamed Shihab Sulaiman" class="profile-avatar" />
+          </div>
+          <div class="profile-hero-text">
+            <div class="hero-eyebrow">Academic Leader · Higher Education &amp; AI Researcher · Management Consultant</div>
+            <h1 class="hero-name">Mohamed Shihab Sulaiman</h1>
+            <div class="hero-title">16+ Years Executive Leadership · British Academy of Management &amp; CMI Member</div>
+            <div class="hero-meta-row">
+              <span class="hero-meta-item"><i class="fa-solid fa-location-dot"></i> Grays, Essex, United Kingdom</span>
+              <span class="hero-meta-item"><i class="fa-solid fa-envelope"></i> <a href="mailto:asfana1986@gmail.com">asfana1986@gmail.com</a></span>
+              <span class="hero-meta-item"><i class="fa-brands fa-whatsapp"></i> <a href="tel:+4407438324788">+44 7438 324 788</a></span>
+              <span class="hero-meta-item"><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/search/results/people/?keywords=S+Mohamed+Shihab" target="_blank">LinkedIn Profile</a></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Credentials Badges -->
+        <div class="credentials-strip">
+          <span class="badge-pill award"><i class="fa-solid fa-trophy"></i> Best Research Paper Award 2024 (ID: FEDE)</span>
+          <span class="badge-pill springer"><i class="fa-solid fa-book-journal-whills"></i> Springer Nature Peer Reviewer (IJSA)</span>
+          <span class="badge-pill bam"><i class="fa-solid fa-building-columns"></i> Ordinary Member — British Academy of Management (ORD-48762)</span>
+          <span class="badge-pill cmi"><i class="fa-solid fa-certificate"></i> Member — Chartered Management Institute (P05390598)</span>
+          <span class="badge-pill scholar"><i class="fa-brands fa-google-scholar"></i> Google Scholar Indexed</span>
+        </div>
+
+        <!-- Executive Profile & Niche Research Focus -->
+        <section class="sec-block">
+          <h2 class="sec-heading"><i class="fa-solid fa-user-tie"></i> Executive Profile &amp; Core Research Focus</h2>
+          <div class="profile-summary-box">
+            A high-impact academic leader, researcher, and management consultant with over <strong>16 years of executive experience</strong> directing higher education institutions, faculty development programs, and human resource systems. Scholarly research focuses on the intersection of <strong>Artificial Intelligence Adoption, Predictive Analytics for Student Retention, and Digital Governance in Higher Education</strong>. Recognized through the <em>Best Research Paper Award 2024</em> (Shodh Sagar) and active peer reviewer service for <em>Springer Nature's International Journal of System Assurance Engineering and Management</em>. Member of the British Academy of Management (BAM) and Chartered Management Institute (CMI), committed to contributing to the UK’s academic innovation and educational technology ecosystem.
+          </div>
+        </section>
+
+        <!-- Core Competencies & Methodologies -->
+        <section class="sec-block">
+          <h2 class="sec-heading"><i class="fa-solid fa-layer-group"></i> Core Competencies &amp; Methodologies</h2>
+          <div class="skills-grid">
+            <div class="skill-tag"><i class="fa-solid fa-chevron-right"></i> Higher Education Administration &amp; Governance</div>
+            <div class="skill-tag"><i class="fa-solid fa-chevron-right"></i> AI-Driven Student Retention &amp; Analytics</div>
+            <div class="skill-tag"><i class="fa-solid fa-chevron-right"></i> Institutional Quality Assurance &amp; Accreditation</div>
+            <div class="skill-tag"><i class="fa-solid fa-chevron-right"></i> Peer Review &amp; Scientific Manuscript Evaluation</div>
+            <div class="skill-tag"><i class="fa-solid fa-chevron-right"></i> Data Envelopment Analysis (DEA) in Education</div>
+            <div class="skill-tag"><i class="fa-solid fa-chevron-right"></i> Strategic Human Resources &amp; Talent Planning</div>
+            <div class="skill-tag"><i class="fa-solid fa-chevron-right"></i> International Curriculum Standards &amp; Review</div>
+            <div class="skill-tag"><i class="fa-solid fa-chevron-right"></i> Cross-Border Consulting &amp; Stakeholder Relations</div>
+          </div>
+        </section>
+
+        <!-- Complete Employment History -->
+        <section class="sec-block" style="margin-top: 6px;">
+          <h2 class="sec-heading"><i class="fa-solid fa-briefcase"></i> Complete Employment &amp; Executive Leadership History</h2>
+
+          <!-- Role 1 -->
+          <div class="exp-item">
+            <div class="exp-row-top">
+              <span class="exp-position">Sales Consultant — Energy &amp; International Management</span>
+              <span class="exp-period">2024 – Present</span>
+            </div>
+            <div class="exp-org-row">
+              <span>Afro Anglo Oil &amp; Gas Block Consultant</span>
+              <span class="exp-location">United Kingdom</span>
+            </div>
+            <ul class="bullet-list">
+              <li>Directing high-stakes corporate consulting engagements and client acquisition frameworks across UK–Africa trade and energy corridors.</li>
+              <li>Implementing data-driven market analyses, stakeholder engagement methodologies, and cross-border partnership development.</li>
+            </ul>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="exp-item">
+            <div class="exp-row-top">
+              <span class="exp-position">Managing Director</span>
+              <span class="exp-period">~8 Years (2014 – 2022)</span>
+            </div>
+            <div class="exp-org-row">
+              <span>Canadian College</span>
+              <span class="exp-location">Vavuniya, Sri Lanka</span>
+            </div>
+            <ul class="bullet-list">
+              <li>Exercised full institutional governance, operational leadership, and fiscal management across degree and diploma programs.</li>
+              <li>Pioneered institutional quality assurance policies, laboratory infrastructure expansions, and international articulation pathways.</li>
+              <li>Supervised multi-faculty academic boards, student retention initiatives, and regulatory compliance standards.</li>
+            </ul>
+          </div>
+
+          <!-- Role 3 -->
+          <div class="exp-item">
+            <div class="exp-row-top">
+              <span class="exp-position">Director of Studies</span>
+              <span class="exp-period">~6 Years (2008 – 2014)</span>
+            </div>
+            <div class="exp-org-row">
+              <span>Golden College</span>
+              <span class="exp-location">Kandy &amp; Vavuniya Campuses, Sri Lanka</span>
+            </div>
+            <ul class="bullet-list">
+              <li>Orchestrated academic delivery, syllabus modernisation, and faculty appraisal systems across dual-campus operations.</li>
+              <li>Chaired advisory committees ensuring strict alignment with national qualification frameworks and vocational accreditation bodies.</li>
+            </ul>
+          </div>
+
+          <!-- Role 4 -->
+          <div class="exp-item">
+            <div class="exp-row-top">
+              <span class="exp-position">Head of Human Resources</span>
+              <span class="exp-period">~2 Years (2006 – 2008)</span>
+            </div>
+            <div class="exp-org-row">
+              <span>ICET Campus</span>
+              <span class="exp-location">Colombo &amp; Anuradhapura, Sri Lanka</span>
+            </div>
+            <ul class="bullet-list">
+              <li>Architected organization-wide recruitment, performance management metrics, and staff development programs for academic personnel.</li>
+            </ul>
+          </div>
+
+        </section>
+
       </div>
-    </header>
 
-    <!-- ── TWO-COLUMN BODY ── -->
-    <div class="cv-body">
+      <!-- Running Footer -->
+      <div class="running-footer">
+        <span>Mohamed Shihab Sulaiman — Curriculum Vitae</span>
+        <span>Verified UK Global Talent Portfolio &nbsp;·&nbsp; <a href="https://github.com/SMohamedShihab">github.com/SMohamedShihab</a></span>
+      </div>
+    </article>
 
-      <!-- ========== SIDEBAR ========== -->
-      <aside class="sidebar">
 
-        <!-- Contact -->
-        <div class="sb-section">
-          <div class="sb-title">Contact</div>
+    <!-- ============================================================
+         PAGE 2: RESEARCH PUBLICATIONS, AWARDS & CITATION IMPACT
+         ============================================================ -->
+    <article class="cv-page" id="page-2">
+      <div class="page-content">
 
-          <div class="sb-item">
-            <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:asfana1986@gmail.com">asfana1986@gmail.com</a>
-          </div>
-
-          <div class="sb-item">
-            <i class="fa-solid fa-phone"></i>
-            <a href="tel:+4407438324788">07438 324 788</a>
-          </div>
-
-          <div class="sb-item">
-            <i class="fa-brands fa-linkedin"></i>
-            <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn Profile</a>
-          </div>
-
-          <div class="sb-item">
-            <i class="fa-brands fa-google"></i>
-            <a href="mailto:asfana1986@gmail.com">Gmail</a>
-          </div>
-
-          <div class="sb-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>No-13, Chadwell Road,<br/>Grays, United Kingdom</span>
-          </div>
+        <!-- Running Header -->
+        <div class="running-header">
+          <span>Curriculum Vitae — <strong>Mohamed Shihab Sulaiman</strong></span>
+          <span>Page 2 of 3 &nbsp;·&nbsp; Publications, Awards &amp; Citation Impact</span>
         </div>
 
-        <!-- Core Skills -->
-        <div class="sb-section">
-          <div class="sb-title">Core Skills</div>
-          <div class="sb-skill"><i class="fa-solid fa-chart-line"></i>Sales Consultancy</div>
-          <div class="sb-skill"><i class="fa-solid fa-people-group"></i>Team Leadership</div>
-          <div class="sb-skill"><i class="fa-solid fa-book-open"></i>Curriculum Development</div>
-          <div class="sb-skill"><i class="fa-solid fa-chess"></i>Strategic Planning</div>
-          <div class="sb-skill"><i class="fa-solid fa-users-gear"></i>HR Management</div>
-          <div class="sb-skill"><i class="fa-solid fa-clipboard-check"></i>Performance Appraisal</div>
-          <div class="sb-skill"><i class="fa-solid fa-coins"></i>Budget Management</div>
-          <div class="sb-skill"><i class="fa-solid fa-graduation-cap"></i>Academic Direction</div>
-          <div class="sb-skill"><i class="fa-solid fa-handshake"></i>Stakeholder Engagement</div>
-          <div class="sb-skill"><i class="fa-solid fa-bullhorn"></i>Business Development</div>
-          <div class="sb-skill"><i class="fa-solid fa-magnifying-glass"></i>Research &amp; Analysis</div>
-          <div class="sb-skill"><i class="fa-solid fa-laptop"></i>Microsoft Office Suite</div>
-        </div>
+        <!-- Major Prize & Global Recognition -->
+        <section class="sec-block">
+          <h2 class="sec-heading"><i class="fa-solid fa-trophy"></i> Major Prizes, Awards &amp; Verifiable Distinctions</h2>
 
-        <!-- Languages -->
-        <div class="sb-section">
-          <div class="sb-title">Languages</div>
-
-          <div class="sb-lang">
-            <div class="sb-lang-name">English</div>
-            <div class="sb-lang-level">Spoken · Writing · Reading</div>
-            <div class="lang-dots">
-              <div class="dot"></div><div class="dot"></div><div class="dot"></div>
-              <div class="dot"></div><div class="dot"></div>
+          <div class="award-card">
+            <div class="award-icon-box">
+              <i class="fa-solid fa-medal"></i>
             </div>
-          </div>
-
-          <div class="sb-lang">
-            <div class="sb-lang-name">Tamil</div>
-            <div class="sb-lang-level">Native</div>
-            <div class="lang-dots">
-              <div class="dot"></div><div class="dot"></div><div class="dot"></div>
-              <div class="dot"></div><div class="dot"></div>
-            </div>
-          </div>
-
-          <div class="sb-lang">
-            <div class="sb-lang-name">Sinhala</div>
-            <div class="sb-lang-level">Native</div>
-            <div class="lang-dots">
-              <div class="dot"></div><div class="dot"></div><div class="dot"></div>
-              <div class="dot"></div><div class="dot empty"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Hobbies -->
-        <div class="sb-section">
-          <div class="sb-title">Interests</div>
-          <div class="sb-item"><i class="fa-solid fa-hands-holding-heart"></i><span>Social Services</span></div>
-          <div class="sb-item"><i class="fa-solid fa-book-open"></i><span>Reading</span></div>
-          <div class="sb-item"><i class="fa-solid fa-music"></i><span>Music</span></div>
-        </div>
-
-        <!-- Community -->
-        <div class="sb-section">
-          <div class="sb-title">Community</div>
-          <div class="sb-item">
-            <i class="fa-solid fa-flag-checkered"></i>
-            <span>Leadership Camps &amp; Seminars – 5 years across Sri Lankan Universities</span>
-          </div>
-          <div class="sb-item">
-            <i class="fa-solid fa-bullhorn"></i>
-            <span>Awareness Programs &amp; Business Promotion initiatives</span>
-          </div>
-        </div>
-
-      </aside>
-
-      <!-- ========== MAIN CONTENT ========== -->
-      <main class="main">
-
-        <!-- Career Objective -->
-        <div class="sec">
-          <div class="sec-title"><i class="fa-solid fa-bullseye"></i> Career Objective</div>
-          <p class="para">
-            Accomplish the task, which is challenging, and be part of the organization – which my tenure shall be assigned with in achieving the goals and objectives.
-          </p>
-        </div>
-
-        <!-- Professional Summary -->
-        <div class="sec">
-          <div class="sec-title"><i class="fa-solid fa-user-tie"></i> Professional Summary</div>
-          <p class="para">
-            Highly skilled and resourceful professional with over <strong>16 years of leadership experience</strong> spanning academic administration, human resources management, and business development. Exceptionally knowledgeable in certification standards and adept at maintaining stellar student retention rates. Currently channelling deep institutional expertise into a dynamic <strong>Sales Consultancy</strong> role within the Oil &amp; Gas sector in the United Kingdom.
-          </p>
-        </div>
-
-        <!-- Working Experience -->
-        <div class="sec">
-          <div class="sec-title"><i class="fa-solid fa-briefcase"></i> Working Experience</div>
-
-          <!-- Job 1 -->
-          <div class="exp-entry">
-            <div class="exp-header">
-              <div class="exp-role">Sales Consultant</div>
-              <div class="exp-badge">Current</div>
-            </div>
-            <div class="exp-org">Afro Anglo Oil &amp; Gas Block Consultant</div>
-            <div class="exp-meta">
-              <span><i class="fa-regular fa-calendar"></i>2024 – Present</span>
-              <span><i class="fa-solid fa-location-dot"></i>United Kingdom</span>
-            </div>
-            <ul class="exp-list">
-              <li>Providing expert consulting services in the Oil &amp; Gas sector, focusing on client acquisition and business development.</li>
-              <li>Building and managing strategic client relationships across Afro-Anglo business corridors.</li>
-            </ul>
-          </div>
-
-          <hr class="exp-divider" />
-
-          <!-- Job 2 -->
-          <div class="exp-entry">
-            <div class="exp-role">Managing Director</div>
-            <div class="exp-org">Canadian College – Vavuniya</div>
-            <div class="exp-meta">
-              <span><i class="fa-regular fa-calendar"></i>8 Years</span>
-              <span><i class="fa-solid fa-location-dot"></i>Sri Lanka</span>
-            </div>
-            <ul class="exp-list">
-              <li>Supervised all administrative, financial and curricular program aspects.</li>
-              <li>Directed program evolutions and designed strategies for program offering development.</li>
-              <li>Cultivated strategic partnerships with administrators and faculty.</li>
-              <li>Supervised academic labs and contributed to lab improvement planning.</li>
-              <li>Tracked student progress across a variety of service programs.</li>
-              <li>Prepared and submitted annual budget and related proposals and initiatives.</li>
-            </ul>
-          </div>
-
-          <hr class="exp-divider" />
-
-          <!-- Job 3 -->
-          <div class="exp-entry">
-            <div class="exp-role">Director of Studies</div>
-            <div class="exp-org">Golden College – Kandy &amp; Vavuniya</div>
-            <div class="exp-meta">
-              <span><i class="fa-regular fa-calendar"></i>6 Years</span>
-              <span><i class="fa-solid fa-location-dot"></i>Sri Lanka</span>
-            </div>
-            <ul class="exp-list">
-              <li>Conducted faculty evaluations for the Education Director as needed.</li>
-              <li>Ensured compliance with accreditation standards for Advisory Committee functions.</li>
-              <li>Designed and led professional development programs and activities.</li>
-              <li>Supervised faculty orientation and training.</li>
-            </ul>
-          </div>
-
-          <hr class="exp-divider" />
-
-          <!-- Job 4 -->
-          <div class="exp-entry">
-            <div class="exp-role">Head of Human Resources</div>
-            <div class="exp-org">ICET Campus – Colombo &amp; Anuradhapura</div>
-            <div class="exp-meta">
-              <span><i class="fa-regular fa-calendar"></i>2 Years</span>
-              <span><i class="fa-solid fa-location-dot"></i>Sri Lanka</span>
-            </div>
-            <ul class="exp-list">
-              <li>Developed HR plans and policies in conjunction with the company's overall development plan.</li>
-              <li>Overall responsibility of manpower planning and recruitments.</li>
-              <li>Developed induction programmes for new recruits and designed compensation plans and policies.</li>
-              <li>Implemented performance appraisal systems and co-ordinated with line managers.</li>
-              <li>Identified training needs; developed programs for constant employee learning and development.</li>
-              <li>Established organisational structure and implemented disciplinary &amp; welfare policies.</li>
-              <li>Managed exit processes, final settlements, and developed management decision reports.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Education -->
-        <div class="sec">
-          <div class="sec-title"><i class="fa-solid fa-graduation-cap"></i> Education</div>
-
-          <div class="edu-entry">
-            <div class="edu-year">2016–<br/>2019</div>
-            <div class="edu-content">
-              <div class="edu-qual">Bachelor of Business Administration (BBA)</div>
-              <div class="edu-inst"><i class="fa-solid fa-university" style="color:var(--blue);margin-right:4px;font-size:7pt"></i>Mahatma Gandhi Kashi Vidyapith, India</div>
-            </div>
-          </div>
-
-          <div class="edu-entry">
-            <div class="edu-year">2003</div>
-            <div class="edu-content">
-              <div class="edu-qual">G.C.E. Advanced Level (A/L)</div>
-              <div class="edu-inst">Sri Lanka — Passed</div>
-            </div>
-          </div>
-
-          <div class="edu-entry">
-            <div class="edu-year">2000</div>
-            <div class="edu-content">
-              <div class="edu-qual">G.C.E. Ordinary Level (O/L)</div>
-              <div class="edu-inst">Sri Lanka — Passed</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- References -->
-        <div class="sec">
-          <div class="sec-title"><i class="fa-solid fa-id-card"></i> References</div>
-          <div class="ref-grid">
-
-            <div class="ref-card">
-              <div class="ref-name">S. Thilaganathan</div>
-              <div class="ref-role">Lecturer in Mathematics</div>
-              <div class="ref-info">
-                Faculty of Applied Science<br/>
-                Vavuniya Campus, University of Jaffna
+            <div class="award-details">
+              <span class="award-badge-top">International Scholarly Distinction</span>
+              <div class="award-title-text">Best Research Paper Award 2024</div>
+              <div class="award-meta">
+                <strong>Issuing Organization:</strong> Shodh Sagar (events.shodhsagar.org)<br/>
+                <strong>Awardees:</strong> Dr. Michael O. Edwards &amp; Mohamed Shihab Sulaiman<br/>
+                <strong>Honored Research Paper:</strong> <em>"Technology-Enabled Student Retention in Higher Education: Predictive Analytics, Engagement and Academic Success"</em><br/>
+                <strong>Publication Venue:</strong> International Journal for Research Publication &amp; Seminar (JRPS), Vol. 15, Issue 4 (Oct – Dec 2024)<br/>
+                <strong>Award Date:</strong> 15 October 2024 &nbsp;|&nbsp; <strong>Unique Verification ID:</strong> <code>FEDE</code>
               </div>
-              <div class="ref-phone"><i class="fa-solid fa-phone"></i> 0094 773 46 86 80</div>
+              <a href="https://events.shodhsagar.org/index.php/awards/search/index?query=FEDE" target="_blank" class="award-verify-link">
+                <i class="fa-solid fa-circle-check"></i> Click to Verify Award Record on Shodh Sagar Registry (ID: FEDE)
+              </a>
             </div>
-
-            <div class="ref-card">
-              <div class="ref-name">Dr. A.H.M. Riyas M.B.B.S</div>
-              <div class="ref-role">Medical Doctor</div>
-              <div class="ref-info">
-                Teaching Hospital<br/>
-                Anuradhapura, Sri Lanka
-              </div>
-              <div class="ref-phone"><i class="fa-solid fa-phone"></i> 0094 777 66 81 93</div>
-            </div>
-
           </div>
+        </section>
+
+        <!-- Significant Publication Records -->
+        <section class="sec-block">
+          <h2 class="sec-heading"><i class="fa-solid fa-book-open"></i> Significant Peer-Reviewed Publication Records</h2>
+          <p class="sec-subtext">Peer-reviewed articles investigating administrative artificial intelligence, digital transformation readiness, predictive retention models, and quality assurance frameworks:</p>
+
+          <!-- Pub 1 -->
+          <div class="pub-entry">
+            <div class="pub-top">
+              <div class="pub-title">1. Technology-Enabled Student Retention in Higher Education: Predictive Analytics, Engagement and Academic Success</div>
+              <span class="pub-year-badge">2024</span>
+            </div>
+            <div class="pub-venue">International Journal for Research Publication &amp; Seminar (JRPS), Vol. 15, Issue 4, pp. 401–412</div>
+            <div class="pub-desc">
+              <strong>Authors:</strong> Dr. Michael O. Edwards &amp; Mohamed Shihab Sulaiman<br/>
+              <strong>Contribution &amp; Impact:</strong> Formulated an empirical framework leveraging machine learning predictive models and early-warning engagement indicators to reduce university dropout rates. <em>Conferred the Best Research Paper Award 2024.</em>
+            </div>
+            <div class="pub-footer-links">
+              <a href="https://jrpsjournal.in/index.php/j/article/view/401" target="_blank"><i class="fa-solid fa-link"></i> Journal Article Link (401)</a>
+              <a href="https://events.shodhsagar.org/index.php/awards/search/index?query=FEDE" target="_blank"><i class="fa-solid fa-certificate"></i> Shodh Sagar Award Verification</a>
+            </div>
+          </div>
+
+          <!-- Pub 2 -->
+          <div class="pub-entry">
+            <div class="pub-top">
+              <div class="pub-title">2. Digital Transformation in Higher Education Management: Opportunities, Challenges and Institutional Readiness</div>
+              <span class="pub-year-badge">2025</span>
+            </div>
+            <div class="pub-venue">International Journal of Research Publications in Engineering Technology and Management (IJRPETM)</div>
+            <div class="pub-desc">
+              <strong>Author:</strong> Mohamed Shihab Sulaiman<br/>
+              <strong>Contribution &amp; Impact:</strong> Analyzes institutional readiness metrics for adopting automated administration systems, cloud infrastructures, and digital governance across developing higher education sectors.
+            </div>
+            <div class="pub-footer-links">
+              <a href="https://www.researchgate.net/profile/Mohamed-Shihab-Sulaiman" target="_blank"><i class="fa-brands fa-researchgate"></i> ResearchGate Indexed</a>
+            </div>
+          </div>
+
+          <!-- Pub 3 -->
+          <div class="pub-entry">
+            <div class="pub-top">
+              <div class="pub-title">3. AI-Enabled Higher Education Management: A Strategic Framework for Improving Student Engagement, Retention and Institutional Performance</div>
+              <span class="pub-year-badge">2026</span>
+            </div>
+            <div class="pub-venue">Academic Research Series on Higher Education Innovation</div>
+            <div class="pub-desc">
+              <strong>Author:</strong> Mohamed Shihab Sulaiman<br/>
+              <strong>Contribution &amp; Impact:</strong> Proposes an operational architecture integrating predictive analytics with managerial decision support to streamline resource allocation and student academic progression.
+            </div>
+          </div>
+
+          <!-- Pub 4 -->
+          <div class="pub-entry">
+            <div class="pub-top">
+              <div class="pub-title">4. Artificial Intelligence Adoption in Higher Education Administration: Leadership, Governance and Organisational Implications</div>
+              <span class="pub-year-badge">2025</span>
+            </div>
+            <div class="pub-venue">Higher Education Management &amp; Policy Review</div>
+            <div class="pub-desc">
+              <strong>Author:</strong> Mohamed Shihab Sulaiman<br/>
+              <strong>Contribution &amp; Impact:</strong> Evaluates governance challenges, data privacy standards, and change management requirements for senior leadership deploying AI in university administration.
+            </div>
+          </div>
+
+          <!-- Pub 5 -->
+          <div class="pub-entry">
+            <div class="pub-top">
+              <div class="pub-title">5. Quality Assurance and Accreditation in Higher Education: The Role of Educational Leadership in Improving Institutional Performance</div>
+              <span class="pub-year-badge">2024</span>
+            </div>
+            <div class="pub-venue">Educational Leadership &amp; Quality Management Journal</div>
+            <div class="pub-desc">
+              <strong>Author:</strong> Mohamed Shihab Sulaiman<br/>
+              <strong>Contribution &amp; Impact:</strong> Examines continuous quality improvement (CQI) methodologies, academic audit readiness, and leadership benchmarks for vocational and degree-granting bodies.
+            </div>
+          </div>
+
+          <!-- Pub 6 -->
+          <div class="pub-entry">
+            <div class="pub-top">
+              <div class="pub-title">6. Strategic Educational Leadership and Institutional Performance in Higher Education: A Framework for Sustainable Development</div>
+              <span class="pub-year-badge">2023</span>
+            </div>
+            <div class="pub-venue">International Management &amp; Administrative Studies Review</div>
+            <div class="pub-desc">
+              <strong>Author:</strong> Mohamed Shihab Sulaiman<br/>
+              <strong>Contribution &amp; Impact:</strong> Synthesizes sustainable development goals (SDG 4: Quality Education) into higher education managerial roadmaps and long-term institutional scalability.
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+
+      <!-- Running Footer -->
+      <div class="running-footer">
+        <span>Mohamed Shihab Sulaiman — Curriculum Vitae</span>
+        <span>Google Scholar &amp; ResearchGate Indexed &nbsp;·&nbsp; Page 2 of 3</span>
+      </div>
+    </article>
+
+
+    <!-- ============================================================
+         PAGE 3: PEER REVIEW, ACCREDITATIONS, EDUCATION & DECLARATION
+         ============================================================ -->
+    <article class="cv-page" id="page-3">
+      <div class="page-content">
+
+        <!-- Running Header -->
+        <div class="running-header">
+          <span>Curriculum Vitae — <strong>Mohamed Shihab Sulaiman</strong></span>
+          <span>Page 3 of 3 &nbsp;·&nbsp; Peer Review, Accreditations &amp; Referees</span>
         </div>
 
-        <!-- Declaration -->
-        <div class="declaration">
-          <p>I, the undersigned, certify that the statements made by me here are true to the best of my knowledge and belief. I understand that any willful misstatements by me are liable to dismissal if employed.</p>
-          <div class="sig-name">Mohamed Shihab Sulaiman</div>
-          <div class="sig-role">Sales Consultant &amp; Academic Leader</div>
+        <!-- Judging the Work of Others / Peer Review Services -->
+        <section class="sec-block">
+          <h2 class="sec-heading"><i class="fa-solid fa-gavel"></i> Scholarly Peer Review Record — Judging the Work of Others</h2>
+          <p class="sec-subtext">Invited peer reviewer for premier scientific publications indexed in Scopus and Web of Science (Springer Nature Editorial Manager):</p>
+
+          <div class="review-card">
+            <div class="review-head">
+              <span>Manuscript Ref: <code>IJSA-D-25-00777R1</code> (Original Research)</span>
+              <span style="color:var(--emerald);font-weight:700;"><i class="fa-solid fa-circle-check"></i> Completed: 16 Oct 2026</span>
+            </div>
+            <div class="review-journal">International Journal of System Assurance Engineering and Management (Springer Nature)</div>
+            <div class="review-meta"><strong>Author:</strong> Awadh Pratap Singh &nbsp;|&nbsp; <strong>Review Turnaround:</strong> 1 Day</div>
+            <div class="review-desc">
+              <strong>Evaluated Article:</strong> <em>"Unlocking Excellence: A Two-Stage Network DEA Approach to Evaluating Educational Institutions"</em>.<br/>
+              <strong>Review Scope:</strong> Rigorous evaluation of mathematical DEA models measuring efficiency, resource optimization, and operational performance across educational networks.
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-head">
+              <span>Manuscript Ref: <code>IJSA-D-24-01188</code> (Original Research)</span>
+              <span style="color:var(--emerald);font-weight:700;"><i class="fa-solid fa-circle-check"></i> Completed: 17 Sep 2026</span>
+            </div>
+            <div class="review-journal">International Journal of System Assurance Engineering and Management (Springer Nature)</div>
+            <div class="review-meta"><strong>Editor:</strong> Dr. Anu G. Aggarwal, Ph.D. &nbsp;|&nbsp; <strong>Author:</strong> Wengliang Ju &nbsp;|&nbsp; <strong>Turnaround:</strong> 3 Days</div>
+            <div class="review-desc">
+              <strong>Evaluated Article:</strong> <em>"Education evaluation strategies under digital transformation: the integration of big data and artificial intelligence technology"</em>.<br/>
+              <strong>Review Scope:</strong> Expert assessment on big data architectures, AI algorithm validity, and institutional evaluation frameworks.
+            </div>
+          </div>
+        </section>
+
+        <!-- Professional Memberships in the United Kingdom -->
+        <section class="sec-block">
+          <h2 class="sec-heading"><i class="fa-solid fa-building-columns"></i> UK Professional Memberships &amp; Accreditations</h2>
+
+          <table class="affil-table">
+            <thead>
+              <tr>
+                <th>Professional Body</th>
+                <th>Membership Level &amp; Reference ID</th>
+                <th>Institutional Standing</th>
+                <th>Proof Document</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>British Academy of Management (BAM)</strong></td>
+                <td>Standard Ordinary Member<br/>Ref: <code>ORD-48762</code> · Inv: <code>BAM18771</code></td>
+                <td>UK’s leading scholarly management association (Charity No. 1117999, London)</td>
+                <td>Verified Invoice on file</td>
+              </tr>
+              <tr>
+                <td><strong>Chartered Management Institute (CMI)</strong></td>
+                <td>Professional Member<br/>Account: <code>P05390598</code> · Rec: <code>REC002837590</code></td>
+                <td>UK chartered body dedicated to management excellence (Royal Charter No. 1091035)</td>
+                <td>Verified Receipt on file</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Academic Qualifications & Languages Split -->
+        <div class="grid-2col">
+          <section class="sec-block">
+            <h2 class="sec-heading"><i class="fa-solid fa-graduation-cap"></i> Academic Qualifications</h2>
+            <div style="font-size:7.6pt;line-height:1.45;">
+              <div style="margin-bottom:6px;">
+                <strong>Bachelor of Business Administration (BBA)</strong><br/>
+                <span style="color:var(--primary-light);">Mahatma Gandhi Kashi Vidyapith, India</span> &nbsp;·&nbsp; <em>2016 – 2019</em>
+              </div>
+              <div style="margin-bottom:4px;">
+                <strong>G.C.E. Advanced Level (A/L)</strong> — Sri Lanka &nbsp;·&nbsp; <em>2003</em>
+              </div>
+              <div>
+                <strong>G.C.E. Ordinary Level (O/L)</strong> — Sri Lanka &nbsp;·&nbsp; <em>2000</em>
+              </div>
+            </div>
+          </section>
+
+          <section class="sec-block">
+            <h2 class="sec-heading"><i class="fa-solid fa-language"></i> Languages &amp; Community</h2>
+            <div style="font-size:7.6pt;line-height:1.45;">
+              <div><strong>English:</strong> Professional Spoken, Academic Writing &amp; Reading</div>
+              <div><strong>Tamil:</strong> Native Proficiency</div>
+              <div><strong>Sinhala:</strong> Native Proficiency</div>
+              <div style="margin-top:4px;color:var(--text-light);font-size:7.2pt;">
+                <i class="fa-solid fa-campground"></i> Coordinated 5 years of University Leadership Camps and student empowerment seminars across Sri Lanka.
+              </div>
+            </div>
+          </section>
         </div>
 
-      </main>
-    </div><!-- end cv-body -->
+        <!-- Academic & Professional References -->
+        <section class="sec-block">
+          <h2 class="sec-heading"><i class="fa-solid fa-id-card-clip"></i> Academic &amp; Professional Referees</h2>
+          <div class="ref-container">
+            <div class="ref-box">
+              <div class="ref-box-name">S. Thilaganathan</div>
+              <div class="ref-box-title">Lecturer in Mathematics</div>
+              <div class="ref-box-dept">Faculty of Applied Science<br/>Vavuniya Campus, University of Jaffna, Sri Lanka</div>
+              <div class="ref-box-phone"><i class="fa-solid fa-phone"></i> +94 773 46 86 80</div>
+            </div>
+            <div class="ref-box">
+              <div class="ref-box-name">Dr. A.H.M. Riyas, M.B.B.S</div>
+              <div class="ref-box-title">Medical Doctor &amp; Healthcare Administrator</div>
+              <div class="ref-box-dept">Teaching Hospital<br/>Anuradhapura, Sri Lanka</div>
+              <div class="ref-box-phone"><i class="fa-solid fa-phone"></i> +94 777 66 81 93</div>
+            </div>
+          </div>
+        </section>
 
-  </div><!-- end page-wrap -->
+        <!-- Formal Certification Statement -->
+        <div class="legal-declaration">
+          I, the undersigned, hereby certify that the statements and evidentiary credentials articulated within this Curriculum Vitae are accurate, authentic, and verifiable to the best of my knowledge.<br/>
+          <strong>Mohamed Shihab Sulaiman (S. M. Shihab)</strong> &nbsp;|&nbsp; Grays, Essex, United Kingdom
+        </div>
+
+      </div>
+
+      <!-- Running Footer -->
+      <div class="running-footer">
+        <span>Mohamed Shihab Sulaiman — Curriculum Vitae</span>
+        <span>Page 3 of 3 &nbsp;·&nbsp; Prepared for UK Global Talent Visa (Tech Nation / British Academy)</span>
+      </div>
+    </article>
+
+  </div><!-- end document-container -->
 
 </body>
 </html>
