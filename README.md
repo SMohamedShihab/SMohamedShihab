@@ -95,13 +95,19 @@ Verified peer review records across **Springer Nature Editorial Manager** and **
 
   <p><strong>Springer Nature Snapp Reviewer Dashboard — Linked ORCID: <a href="https://orcid.org/0009-0006-9749-9590">0009-0006-9749-9590</a></strong></p>
   <a href="assets/springer-snapp-reviewer-dashboard.jpeg" target="_blank">
-    <img src="assets/springer-snapp-reviewer-dashboard.jpeg" alt="Springer Nature Snapp Reviewer Dashboard" width="850" style="border: 1px solid #cbd5e1; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.12);" />
+    <img src="assets/springer-snapp-reviewer-dashboard.jpeg" alt="Springer Nature Snapp Reviewer Dashboard" width="850" style="border: 1px solid #cbd5e1; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.12); margin-bottom: 12px;" />
+  </a>
+
+  <p><strong>Springer Nature Snapp Reviewer Dashboard — Discover Computing (MWP Framework)</strong></p>
+  <a href="assets/springer-snapp-review-math-word-problem.jpeg" target="_blank">
+    <img src="assets/springer-snapp-review-math-word-problem.jpeg" alt="Springer Nature Snapp Review Record - Discover Computing" width="850" style="border: 1px solid #cbd5e1; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.12);" />
   </a>
 </div>
 
 | Journal / Platform | Manuscript Reference | Evaluated Research Title | Status / Date | Author / Editorial Lead |
 | :--- | :--- | :--- | :--- | :--- |
 | **Discover Computing**<br/>*(Springer Nature Snapp)* | Version 2.0 | *Design and Technical Validation of an Interactive Intelligent Scholar Directory* | **Completed: 20 Aug 2026**<br/>*(Review Credit Deposited to ORCID)* | Hongyi Dong, Zuojian Zhou, Yifan Chu, Qilin Jiang |
+| **Discover Computing**<br/>*(Springer Nature Snapp)* | Version 1.4 | *A lightweight analogical framework for math word problem solving using...* | **Completed: 02 Sep 2026**<br/>*(Review Completed & Submitted)* | Zhen Zhang, Yuhao Jia, Jing Wang, Duantengchuan Li, Cheng Chi |
 | **Int. Journal of System Assurance Engineering & Management** *(Springer Nature)* | **`IJSA-D-24-01188`** | *Education evaluation strategies under digital transformation: the integration of big data and artificial intelligence technology* | **Completed: 17 Sep 2026**<br/>*(Turnaround: 3 Days)* | Editor: Dr. Anu G. Aggarwal, Ph.D.<br/>Author: Wengliang Ju |
 | **Int. Journal of System Assurance Engineering & Management** *(Springer Nature)* | **`IJSA-D-25-00777R1`** | *Unlocking Excellence: A Two-Stage Network DEA Approach to Evaluating Educational Institutions* | **Assigned / Agreed: 15 Oct 2026**<br/>*(Due: 02 Nov 2026)* | Author: Awadh Pratap Singh |
 
@@ -262,6 +268,7 @@ graph TD
 | **Springer Peer Review** | Completed Reviewer Assignment Record (IJSA) | [Inspect IJSA Record](assets/springer-reviewer-completed-assignment.jpeg) |
 | **Springer Reviewer Assignment** | Active Review Assignment Record (IJSA) | [Inspect Assignment Record](assets/springer-reviewer-pending-assignment.jpeg) |
 | **Springer Snapp Dashboard** | Discover Computing Review & Linked ORCID | [Inspect Snapp Dashboard](assets/springer-snapp-reviewer-dashboard.jpeg) |
+| **Springer Snapp Review** | Discover Computing (MWP Framework Review) | [Inspect MWP Review](assets/springer-snapp-review-math-word-problem.jpeg) |
 | **ORCID Identifier** | Official Verified ORCID Record | [0009-0006-9749-9590](https://orcid.org/0009-0006-9749-9590) |
 | **BAM Membership** | British Academy of Management Invoice `BAM18771` | [Download BAM PDF](assets/BAM-British-Academy-of-Management-Membership.pdf) |
 | **CMI Membership** | Chartered Management Institute Receipt `REC002837590` | [Download CMI PDF](assets/CMI-Chartered-Management-Institute-Membership.pdf) |
