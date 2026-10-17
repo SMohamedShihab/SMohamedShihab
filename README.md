@@ -17,7 +17,7 @@
 [![Phone](https://img.shields.io/badge/Phone-+44%207438%20324%20788-25D366?style=flat-square&logo=whatsapp&logoColor=white)](tel:+4407438324788)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-S%20Mohamed%20Shihab-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/search/results/people/?keywords=S+Mohamed+Shihab)
 [![Location](https://img.shields.io/badge/Location-Grays%2C%20Essex%2C%20UK-red?style=flat-square&logo=google-maps&logoColor=white)](https://maps.google.com/?q=Grays,+Essex,+United+Kingdom)
-[![ORCID](https://img.shields.io/badge/ORCID-Connecting%20Research-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0006--9749--9590-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0009-0006-9749-9590)
 
 </div>
 
@@ -79,20 +79,31 @@ Awarded by **Shodh Sagar** for outstanding research contributions in educational
 
 Serving as an invited peer reviewer for premier international scientific journals demonstrates active peer recognition and fulfilling the Global Talent Visa evidentiary standard of **"Judging the Work of Others"**.
 
-### 📖 Springer Nature — *International Journal of System Assurance Engineering and Management*
-Logged official reviewer assignments on **Editorial Manager**:
+### 📖 Springer Nature — Peer Reviewer Appointments
+Verified peer review records across **Springer Nature Editorial Manager** and **Springer Nature Snapp Reviewer Dashboard**:
 
 <div align="center">
-  <a href="assets/springer-peer-reviewer-record.jpeg" target="_blank">
-    <img src="assets/springer-peer-reviewer-record.jpeg" alt="Springer Editorial Reviewer Assignments - Mohamed Shihab Sulaiman" width="850" style="border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+  <p><strong>Completed Reviewer Assignment — Editorial Manager (IJSA)</strong></p>
+  <a href="assets/springer-reviewer-completed-assignment.jpeg" target="_blank">
+    <img src="assets/springer-reviewer-completed-assignment.jpeg" alt="Springer Nature IJSA Completed Reviewer Assignment" width="850" style="border: 1px solid #cbd5e1; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.12); margin-bottom: 12px;" />
   </a>
-  <p><em>Official Editorial Manager record showing completed peer reviews for Springer Nature's IJSA</em></p>
+
+  <p><strong>Active / Assigned Reviewer Assignment — Editorial Manager (IJSA)</strong></p>
+  <a href="assets/springer-reviewer-pending-assignment.jpeg" target="_blank">
+    <img src="assets/springer-reviewer-pending-assignment.jpeg" alt="Springer Nature IJSA Reviewer Assignment" width="850" style="border: 1px solid #cbd5e1; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.12); margin-bottom: 12px;" />
+  </a>
+
+  <p><strong>Springer Nature Snapp Reviewer Dashboard — Linked ORCID: <a href="https://orcid.org/0009-0006-9749-9590">0009-0006-9749-9590</a></strong></p>
+  <a href="assets/springer-snapp-reviewer-dashboard.jpeg" target="_blank">
+    <img src="assets/springer-snapp-reviewer-dashboard.jpeg" alt="Springer Nature Snapp Reviewer Dashboard" width="850" style="border: 1px solid #cbd5e1; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.12);" />
+  </a>
 </div>
 
-| Manuscript Reference | Article Title | Focus Area | Date Completed | Corresponding Author / Editor |
+| Journal / Platform | Manuscript Reference | Evaluated Research Title | Status / Date | Author / Editorial Lead |
 | :--- | :--- | :--- | :--- | :--- |
-| **`IJSA-D-25-00777R1`** | *Unlocking Excellence: A Two-Stage Network DEA Approach to Evaluating Educational Institutions* | Two-Stage DEA, Efficiency Modeling, Higher Education Analytics | **16 Oct 2026** *(Review completed in 1 day)* | Author: Awadh Pratap Singh |
-| **`IJSA-D-24-01188`** | *Education evaluation strategies under digital transformation: the integration of big data and artificial intelligence technology* | Digital Transformation, Big Data, Artificial Intelligence in Education | **17 Sep 2026** *(Review completed in 3 days)* | Editor: Dr. Anu G. Aggarwal, Ph.D. <br/>Author: Wengliang Ju |
+| **Discover Computing**<br/>*(Springer Nature Snapp)* | Version 2.0 | *Design and Technical Validation of an Interactive Intelligent Scholar Directory* | **Completed: 20 Aug 2026**<br/>*(Review Credit Deposited to ORCID)* | Hongyi Dong, Zuojian Zhou, Yifan Chu, Qilin Jiang |
+| **Int. Journal of System Assurance Engineering & Management** *(Springer Nature)* | **`IJSA-D-24-01188`** | *Education evaluation strategies under digital transformation: the integration of big data and artificial intelligence technology* | **Completed: 17 Sep 2026**<br/>*(Turnaround: 3 Days)* | Editor: Dr. Anu G. Aggarwal, Ph.D.<br/>Author: Wengliang Ju |
+| **Int. Journal of System Assurance Engineering & Management** *(Springer Nature)* | **`IJSA-D-25-00777R1`** | *Unlocking Excellence: A Two-Stage Network DEA Approach to Evaluating Educational Institutions* | **Assigned / Agreed: 15 Oct 2026**<br/>*(Due: 02 Nov 2026)* | Author: Awadh Pratap Singh |
 
 ---
 
@@ -248,7 +259,10 @@ graph TD
 | :--- | :--- | :--- |
 | **Award Verification** | Shodh Sagar Best Research Paper Award 2024 (ID: `FEDE`) | [Verify at events.shodhsagar.org](https://events.shodhsagar.org/index.php/awards/search/index?query=FEDE) |
 | **Journal Article** | JRPS Journal Paper (Article No. 401) | [Read on JRPS Portal](https://jrpsjournal.in/index.php/j/article/view/401) |
-| **Springer Peer Review** | Completed Reviewer Assignments Record | [Inspect IJSA Record](assets/springer-peer-reviewer-record.jpeg) |
+| **Springer Peer Review** | Completed Reviewer Assignment Record (IJSA) | [Inspect IJSA Record](assets/springer-reviewer-completed-assignment.jpeg) |
+| **Springer Reviewer Assignment** | Active Review Assignment Record (IJSA) | [Inspect Assignment Record](assets/springer-reviewer-pending-assignment.jpeg) |
+| **Springer Snapp Dashboard** | Discover Computing Review & Linked ORCID | [Inspect Snapp Dashboard](assets/springer-snapp-reviewer-dashboard.jpeg) |
+| **ORCID Identifier** | Official Verified ORCID Record | [0009-0006-9749-9590](https://orcid.org/0009-0006-9749-9590) |
 | **BAM Membership** | British Academy of Management Invoice `BAM18771` | [Download BAM PDF](assets/BAM-British-Academy-of-Management-Membership.pdf) |
 | **CMI Membership** | Chartered Management Institute Receipt `REC002837590` | [Download CMI PDF](assets/CMI-Chartered-Management-Institute-Membership.pdf) |
 | **Research Profile** | ResearchGate Scholarly Index | [Mohamed-Shihab-Sulaiman on ResearchGate](https://www.researchgate.net/profile/Mohamed-Shihab-Sulaiman) |
