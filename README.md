@@ -79,7 +79,41 @@ Awarded by **Shodh Sagar** for outstanding research contributions in educational
 
 Serving as an invited peer reviewer for premier international scientific journals demonstrates active peer recognition and fulfilling the Global Talent Visa evidentiary standard of **"Judging the Work of Others"**.
 
-### 📖 Springer Nature — Peer Reviewer Appointments
+### 🎖️ Official Springer Nature Reviewer Certificates (2026)
+Formal recognition certificates awarded by **Springer Nature** in recognition of scholarly peer review contributions across *Discover Computing* and *International Journal of System Assurance Engineering and Management* (IJSAEM):
+
+<div align="center">
+  <table style="width: 100%; max-width: 950px; border-collapse: collapse; margin-bottom: 20px;">
+    <tr align="center">
+      <td width="33%" style="padding: 10px; vertical-align: top;">
+        <p><strong>Discover Computing</strong><br/><em>(20 August 2026 Certificate)</em></p>
+        <a href="assets/springer-reviewer-certificate-discover-computing-2026-08-20.pdf" target="_blank">
+          <img src="assets/springer-reviewer-certificate-discover-computing-2026-08-20.jpeg" alt="Springer Nature Reviewer Certificate - Discover Computing 20 August 2026" width="100%" style="border: 1px solid #cbd5e1; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.12);" />
+        </a>
+        <br/><br/>
+        <a href="assets/springer-reviewer-certificate-discover-computing-2026-08-20.pdf" target="_blank">📄 <strong>Download Certificate (PDF)</strong></a>
+      </td>
+      <td width="33%" style="padding: 10px; vertical-align: top;">
+        <p><strong>Discover Computing</strong><br/><em>(02 September 2026 Certificate)</em></p>
+        <a href="assets/springer-reviewer-certificate-discover-computing-2026-09-02.pdf" target="_blank">
+          <img src="assets/springer-reviewer-certificate-discover-computing-2026-09-02.jpeg" alt="Springer Nature Reviewer Certificate - Discover Computing 02 September 2026" width="100%" style="border: 1px solid #cbd5e1; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.12);" />
+        </a>
+        <br/><br/>
+        <a href="assets/springer-reviewer-certificate-discover-computing-2026-09-02.pdf" target="_blank">📄 <strong>Download Certificate (PDF)</strong></a>
+      </td>
+      <td width="33%" style="padding: 10px; vertical-align: top;">
+        <p><strong>IJSAEM</strong><br/><em>(Two Manuscripts 2026 Certificate)</em></p>
+        <a href="assets/springer-reviewer-certificate-ijsaem-2026.pdf" target="_blank">
+          <img src="assets/springer-reviewer-certificate-ijsaem-2026.jpeg" alt="Springer Nature Reviewer Certificate - IJSAEM Two Manuscripts" width="100%" style="border: 1px solid #cbd5e1; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.12);" />
+        </a>
+        <br/><br/>
+        <a href="assets/springer-reviewer-certificate-ijsaem-2026.pdf" target="_blank">📄 <strong>Download Certificate (PDF)</strong></a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+### 📖 Springer Nature — Peer Reviewer Appointments & Editorial Records
 Verified peer review records across **Springer Nature Editorial Manager** and **Springer Nature Snapp Reviewer Dashboard**:
 
 <div align="center">
@@ -104,12 +138,12 @@ Verified peer review records across **Springer Nature Editorial Manager** and **
   </a>
 </div>
 
-| Journal / Platform | Manuscript Reference | Evaluated Research Title | Status / Date | Author / Editorial Lead |
-| :--- | :--- | :--- | :--- | :--- |
-| **Discover Computing**<br/>*(Springer Nature Snapp)* | Version 2.0 | *Design and Technical Validation of an Interactive Intelligent Scholar Directory* | **Completed: 20 Aug 2026**<br/>*(Review Credit Deposited to ORCID)* | Hongyi Dong, Zuojian Zhou, Yifan Chu, Qilin Jiang |
-| **Discover Computing**<br/>*(Springer Nature Snapp)* | Version 1.4 | *A lightweight analogical framework for math word problem solving using...* | **Completed: 02 Sep 2026**<br/>*(Review Completed & Submitted)* | Zhen Zhang, Yuhao Jia, Jing Wang, Duantengchuan Li, Cheng Chi |
-| **Int. Journal of System Assurance Engineering & Management** *(Springer Nature)* | **`IJSA-D-24-01188`** | *Education evaluation strategies under digital transformation: the integration of big data and artificial intelligence technology* | **Completed: 17 Sep 2026**<br/>*(Turnaround: 3 Days)* | Editor: Dr. Anu G. Aggarwal, Ph.D.<br/>Author: Wengliang Ju |
-| **Int. Journal of System Assurance Engineering & Management** *(Springer Nature)* | **`IJSA-D-25-00777R1`** | *Unlocking Excellence: A Two-Stage Network DEA Approach to Evaluating Educational Institutions* | **Assigned / Agreed: 15 Oct 2026**<br/>*(Due: 02 Nov 2026)* | Author: Awadh Pratap Singh |
+| Journal / Platform | Manuscript Reference | Evaluated Research Title | Status / Date | Author / Editorial Lead | Official Certificate & Record |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Discover Computing**<br/>*(Springer Nature Snapp)* | Version 2.0 | *Design and Technical Validation of an Interactive Intelligent Scholar Directory* | **Completed: 20 Aug 2026**<br/>*(Review Credit Deposited to ORCID)* | Hongyi Dong, Zuojian Zhou, Yifan Chu, Qilin Jiang | [📄 Certificate PDF](assets/springer-reviewer-certificate-discover-computing-2026-08-20.pdf) &bull; [Inspect Snapp](assets/springer-snapp-reviewer-dashboard.jpeg) |
+| **Discover Computing**<br/>*(Springer Nature Snapp)* | Version 1.4 | *A lightweight analogical framework for math word problem solving using...* | **Completed: 02 Sep 2026**<br/>*(Review Completed & Submitted)* | Zhen Zhang, Yuhao Jia, Jing Wang, Duantengchuan Li, Cheng Chi | [📄 Certificate PDF](assets/springer-reviewer-certificate-discover-computing-2026-09-02.pdf) &bull; [Inspect Review](assets/springer-snapp-review-math-word-problem.jpeg) |
+| **Int. Journal of System Assurance Engineering & Management** *(Springer Nature)* | **`IJSA-D-24-01188`** | *Education evaluation strategies under digital transformation: the integration of big data and artificial intelligence technology* | **Completed: 17 Sep 2026**<br/>*(Turnaround: 3 Days)* | Editor: Dr. Anu G. Aggarwal, Ph.D.<br/>Author: Wengliang Ju | [📄 Certificate (2 Manuscripts)](assets/springer-reviewer-certificate-ijsaem-2026.pdf) &bull; [Inspect IJSA](assets/springer-reviewer-completed-assignment.jpeg) |
+| **Int. Journal of System Assurance Engineering & Management** *(Springer Nature)* | **`IJSA-D-25-00777R1`** | *Unlocking Excellence: A Two-Stage Network DEA Approach to Evaluating Educational Institutions* | **Assigned / Agreed: 15 Oct 2026**<br/>*(Due: 02 Nov 2026)* | Author: Awadh Pratap Singh | [📄 Certificate (2 Manuscripts)](assets/springer-reviewer-certificate-ijsaem-2026.pdf) &bull; [Inspect Assignment](assets/springer-reviewer-pending-assignment.jpeg) |
 
 ---
 
@@ -265,6 +299,9 @@ graph TD
 | :--- | :--- | :--- |
 | **Award Verification** | Shodh Sagar Best Research Paper Award 2024 (ID: `FEDE`) | [Verify at events.shodhsagar.org](https://events.shodhsagar.org/index.php/awards/search/index?query=FEDE) |
 | **Journal Article** | JRPS Journal Paper (Article No. 401) | [Read on JRPS Portal](https://jrpsjournal.in/index.php/j/article/view/401) |
+| **Springer Reviewer Certificate** | Discover Computing Official Certificate (20 Aug 2026) | [Download Certificate PDF](assets/springer-reviewer-certificate-discover-computing-2026-08-20.pdf) &bull; [Inspect Preview](assets/springer-reviewer-certificate-discover-computing-2026-08-20.jpeg) |
+| **Springer Reviewer Certificate** | Discover Computing Official Certificate (02 Sep 2026) | [Download Certificate PDF](assets/springer-reviewer-certificate-discover-computing-2026-09-02.pdf) &bull; [Inspect Preview](assets/springer-reviewer-certificate-discover-computing-2026-09-02.jpeg) |
+| **Springer Reviewer Certificate** | IJSAEM Official Certificate (Two Manuscripts 2026) | [Download IJSAEM Certificate PDF](assets/springer-reviewer-certificate-ijsaem-2026.pdf) &bull; [Inspect Preview](assets/springer-reviewer-certificate-ijsaem-2026.jpeg) |
 | **Springer Peer Review** | Completed Reviewer Assignment Record (IJSA) | [Inspect IJSA Record](assets/springer-reviewer-completed-assignment.jpeg) |
 | **Springer Reviewer Assignment** | Active Review Assignment Record (IJSA) | [Inspect Assignment Record](assets/springer-reviewer-pending-assignment.jpeg) |
 | **Springer Snapp Dashboard** | Discover Computing Review & Linked ORCID | [Inspect Snapp Dashboard](assets/springer-snapp-reviewer-dashboard.jpeg) |

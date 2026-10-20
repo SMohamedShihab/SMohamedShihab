@@ -489,6 +489,11 @@
       border-radius: 12px;
       padding: 24px;
       transition: box-shadow 0.25s, transform 0.25s;
+      display: flex;
+      flex-direction: column;
+    }
+    .res-card.full-width {
+      grid-column: 1 / -1;
     }
     .res-card:hover {
       box-shadow: 0 10px 30px rgba(29, 78, 216, 0.1);
@@ -509,6 +514,7 @@
       padding: 4px 10px;
       border-radius: 4px;
       margin-bottom: 12px;
+      align-self: flex-start;
     }
     .res-badge.gold {
       background: #fef3c7;
@@ -538,17 +544,42 @@
       border-radius: 8px;
       overflow: hidden;
       border: 1px solid var(--border);
+      height: 280px;
+      background: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .res-img-wrap a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .res-img-wrap img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+    .res-card.full-width .res-img-wrap {
+      height: auto;
+      max-height: 380px;
+      background: #ffffff;
+    }
+    .res-card.full-width .res-img-wrap img {
       width: 100%;
       height: auto;
-      display: block;
     }
     .res-btn-row {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-top: 14px;
+      margin-top: auto;
+      padding-top: 14px;
     }
     .res-btn {
       display: inline-flex;
@@ -1143,14 +1174,39 @@
           </div>
         </div>
 
-        <!-- Card 2: Peer Review & Memberships -->
+        <!-- Card 2: Official Reviewer Certificates -->
         <div class="res-card reveal">
-          <span class="res-badge blue"><i class="fa-solid fa-gavel"></i> Springer Nature Peer Reviewer</span>
-          <h3 class="res-title">Springer Nature Peer Review Record &amp; ORCID</h3>
+          <span class="res-badge blue"><i class="fa-solid fa-stamp"></i> Springer Nature Official Recognition</span>
+          <h3 class="res-title">Official Springer Nature Reviewer Certificates</h3>
           <p class="res-meta">
-            Invited peer reviewer for <strong>Springer Nature</strong> evaluating high-level manuscripts across <em>International Journal of System Assurance Engineering and Management</em> and <em>Discover Computing</em> (review credit deposited to ORCID).
+            Formal recognition certificates conferred by <strong>Springer Nature</strong> for peer review contributions across <em>Discover Computing</em> (20 Aug 2026 &amp; 02 Sep 2026) and <em>International Journal of System Assurance Engineering and Management</em> (recognizing two manuscripts in 2026).
           </p>
           <div class="res-img-wrap">
+            <a href="./assets/springer-reviewer-certificate-ijsaem-2026.pdf" target="_blank">
+              <img src="./assets/springer-reviewer-certificate-ijsaem-2026.jpeg" alt="Official Springer Nature Reviewer Certificate - Two Manuscripts 2026" />
+            </a>
+          </div>
+          <div class="res-btn-row">
+            <a href="assets/springer-reviewer-certificate-ijsaem-2026.pdf" target="_blank" class="res-btn res-btn-gold">
+              <i class="fa-solid fa-file-pdf"></i> IJSAEM Certificate (2 MSS)
+            </a>
+            <a href="assets/springer-reviewer-certificate-discover-computing-2026-08-20.pdf" target="_blank" class="res-btn res-btn-outline">
+              <i class="fa-solid fa-file-pdf"></i> Discover Computing (20 Aug)
+            </a>
+            <a href="assets/springer-reviewer-certificate-discover-computing-2026-09-02.pdf" target="_blank" class="res-btn res-btn-outline">
+              <i class="fa-solid fa-file-pdf"></i> Discover Computing (02 Sep)
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Peer Review & Memberships (Full Width) -->
+        <div class="res-card full-width reveal">
+          <span class="res-badge blue"><i class="fa-solid fa-gavel"></i> Live Editorial Workflows &amp; UK Memberships</span>
+          <h3 class="res-title">Springer Nature Editorial Workflows, Live ORCID &amp; Accreditations</h3>
+          <p class="res-meta">
+            Invited peer reviewer evaluating high-level manuscripts across <em>International Journal of System Assurance Engineering and Management</em> and <em>Discover Computing</em>. Reviews deposited to ORCID (<code>0009-0006-9749-9590</code>) with verified memberships in the British Academy of Management and Chartered Management Institute.
+          </p>
+          <div class="res-img-wrap" style="max-height: 420px; overflow: hidden;">
             <a href="./assets/springer-reviewer-completed-assignment.jpeg" target="_blank">
               <img src="./assets/springer-reviewer-completed-assignment.jpeg" alt="Springer Editorial Reviewer Assignments Record" />
             </a>
@@ -1167,6 +1223,9 @@
             </a>
             <a href="assets/CMI-Chartered-Management-Institute-Membership.pdf" target="_blank" class="res-btn res-btn-outline">
               <i class="fa-solid fa-certificate"></i> CMI (P05390598)
+            </a>
+            <a href="cv.html" target="_blank" class="res-btn res-btn-gold">
+              <i class="fa-solid fa-file-invoice"></i> View 3-Page CV
             </a>
           </div>
         </div>
